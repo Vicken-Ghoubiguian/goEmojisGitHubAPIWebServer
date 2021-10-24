@@ -34,6 +34,7 @@ type listOfEmojisFromGitHub struct {
 	Second_place_medal string `json:"2st_place_medal"`
 	Third_place_medal  string `json:"3st_place_medal"`
 	Eight_ball         string `json:"8ball"`
+	A_emoji            string `json:"a"`
 }
 
 // ---------------------------------------------- Internal functions to run this module --------------------------------------
