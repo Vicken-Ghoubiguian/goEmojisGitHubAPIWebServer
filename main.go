@@ -6,15 +6,7 @@ import (
 	"net/http"
 )
 
-//
-func main() {
-
-	//
-	http.HandleFunc("/", helloWorldServerFunc)
-
-	//
-	http.ListenAndServe(":80", nil)
-}
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 //
 func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
@@ -39,4 +31,16 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		fmt.Fprintf(w, "%s", getEmojisFromGitHubAPIRequest)
 	}
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+//
+func main() {
+
+	//
+	http.HandleFunc("/", helloWorldServerFunc)
+
+	//
+	http.ListenAndServe(":80", nil)
 }
