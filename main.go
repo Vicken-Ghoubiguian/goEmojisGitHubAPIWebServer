@@ -8,8 +8,6 @@ import (
 	"os"
 )
 
-//
-
 // ---------------------------------------------- Internal types and structures to run this module --------------------------------------
 
 // Definition of all colors used in the weatherModule package
@@ -24,6 +22,10 @@ const (
 	gray   = "\033[37m"
 	white  = "\033[97m"
 )
+
+//
+type listOfEmojisFromGitHub struct {
+}
 
 // ---------------------------------------------- Internal functions to run this module --------------------------------------
 
