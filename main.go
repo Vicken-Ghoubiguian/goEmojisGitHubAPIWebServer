@@ -3,6 +3,7 @@ package main
 //
 import (
 	"fmt"
+	"io/ioutil"
 	"net/http"
 	"os"
 )
@@ -43,22 +44,24 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		getEmojisFromGitHubAPIRequest := "https://api.github.com/emojis"
 
 		//
-		//getEmojisFromGitHubAPIResp, err := http.Get(getEmojisFromGitHubAPIRequest)
+		getEmojisFromGitHubAPIResp, err := http.Get(getEmojisFromGitHubAPIRequest)
 
 		//
+		otherErrorHandlerFunction(err)
 
 		//
-		//getEmojisFromGitHubAPIJsonString, err := ioutil.ReadAll(getEmojisFromGitHubAPIResp.Body)
+		getEmojisFromGitHubAPIJsonString, err := ioutil.ReadAll(getEmojisFromGitHubAPIResp.Body)
 
 		//
+		otherErrorHandlerFunction(err)
 
 		//
-		fmt.Fprintf(w, "%s", getEmojisFromGitHubAPIRequest)
+		fmt.Fprintf(w, "%s", getEmojisFromGitHubAPIJsonString)
 	}
 }
 
 // Function which display other errors when they occurs...
-func OtherErrorHandlerFunction(err error, color string, reset string) {
+func otherErrorHandlerFunction(err error) {
 
 	//
 	if err != nil {
