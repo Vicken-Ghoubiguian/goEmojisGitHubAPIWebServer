@@ -11,7 +11,7 @@ import (
 
 // ---------------------------------------------- Internal types and structures to run this module --------------------------------------
 
-// Definition of all colors used in the weatherModule package
+// Definition of all colors used in this project
 const (
 	reset  = "\033[0m"
 	red    = "\033[31m"
