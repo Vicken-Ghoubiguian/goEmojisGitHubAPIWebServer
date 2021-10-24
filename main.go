@@ -29,6 +29,9 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Error ? Yeah....")
 
 		//
+		fmt.Println(red + "Error ? Yeah...." + reset)
+
+		//
 	} else {
 
 		//
