@@ -27,7 +27,11 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//getEmojisFromGitHubAPIResp, err := http.Get(getEmojisFromGitHubAPIRequest)
 
 		//
+
+		//
 		//getEmojisFromGitHubAPIJsonString, err := ioutil.ReadAll(getEmojisFromGitHubAPIResp.Body)
+
+		//
 
 		//
 		fmt.Fprintf(w, "%s", getEmojisFromGitHubAPIRequest)
