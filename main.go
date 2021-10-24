@@ -73,6 +73,9 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		otherErrorHandlerFunction(err)
 
 		//
+		//fmt.Println(green + currentlistOfEmojisFromGitHub.Hundred + reset)
+
+		//
 		fmt.Fprintf(w, green+"%s"+reset, getEmojisFromGitHubAPIJsonString)
 	}
 }
