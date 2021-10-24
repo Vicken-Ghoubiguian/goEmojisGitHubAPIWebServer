@@ -2,6 +2,7 @@ package main
 
 //
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net/http"
@@ -36,7 +37,7 @@ type listOfEmojisFromGitHub struct {
 func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	//
-	//var currentlistOfEmojisFromGitHub listOfEmojisFromGitHub
+	var currentlistOfEmojisFromGitHub listOfEmojisFromGitHub
 
 	//
 	if r.URL.Path != "/" {
@@ -61,6 +62,12 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
 		//
 		getEmojisFromGitHubAPIJsonString, err := ioutil.ReadAll(getEmojisFromGitHubAPIResp.Body)
+
+		//
+		otherErrorHandlerFunction(err)
+
+		//Single instruction to convert weather_json_string []byte variable to string
+		err = json.Unmarshal(getEmojisFromGitHubAPIJsonString, &currentlistOfEmojisFromGitHub)
 
 		//
 		otherErrorHandlerFunction(err)
