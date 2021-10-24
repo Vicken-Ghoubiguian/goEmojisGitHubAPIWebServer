@@ -27,6 +27,10 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 	} else {
 
-		fmt.Fprintf(w, "Hello, world !")
+		//
+		getEmojisFromGitHubAPIRequest := "https://api.github.com/emojis"
+
+		//
+		fmt.Fprintf(w, "%s", getEmojisFromGitHubAPIRequest)
 	}
 }
