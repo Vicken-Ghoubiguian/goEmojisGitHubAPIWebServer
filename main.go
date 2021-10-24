@@ -31,6 +31,9 @@ type listOfEmojisFromGitHub struct {
 	Hundred            string
 	one_two_three_four string
 	first_place_medal  string
+	second_place_medal string
+	third_place_medal  string
+	eight_ball         string
 }
 
 // ---------------------------------------------- Internal functions to run this module --------------------------------------
