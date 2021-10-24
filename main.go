@@ -10,6 +10,8 @@ import (
 
 //
 
+// ---------------------------------------------- Internal types and structures to run this module --------------------------------------
+
 // Definition of all colors used in the weatherModule package
 const (
 	reset  = "\033[0m"
