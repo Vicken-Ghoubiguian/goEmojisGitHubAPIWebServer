@@ -26,14 +26,14 @@ const (
 
 //
 type listOfEmojisFromGitHub struct {
-	Plus_hand          string
-	Minus_hand         string
-	Hundred            string
-	one_two_three_four string
-	first_place_medal  string
-	second_place_medal string
-	third_place_medal  string
-	eight_ball         string
+	Plus_hand          string `json:"+1"`
+	Minus_hand         string `json:"-1"`
+	Hundred            string `json:"100"`
+	One_two_three_four string `json:"1234"`
+	First_place_medal  string `json:"1st_place_medal"`
+	Second_place_medal string `json:"2st_place_medal"`
+	Third_place_medal  string `json:"3st_place_medal"`
+	Eight_ball         string `json:"8ball"`
 }
 
 // ---------------------------------------------- Internal functions to run this module --------------------------------------
