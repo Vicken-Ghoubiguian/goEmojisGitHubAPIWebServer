@@ -25,6 +25,9 @@ const (
 
 //
 type listOfEmojisFromGitHub struct {
+	Plus_hand  string
+	Minus_hand string
+	Hundred    string
 }
 
 // ---------------------------------------------- Internal functions to run this module --------------------------------------
