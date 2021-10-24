@@ -36,6 +36,9 @@ type listOfEmojisFromGitHub struct {
 func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	//
+	//var currentlistOfEmojisFromGitHub listOfEmojisFromGitHub
+
+	//
 	if r.URL.Path != "/" {
 
 		//
