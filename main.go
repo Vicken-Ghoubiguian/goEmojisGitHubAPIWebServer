@@ -24,23 +24,6 @@ const (
 	white  = "\033[97m"
 )
 
-//
-/*type listOfEmojisFromGitHub struct {
-	Plus_hand          string `json:"+1"`
-	Minus_hand         string `json:"-1"`
-	Hundred            string `json:"100"`
-	One_two_three_four string `json:"1234"`
-	First_place_medal  string `json:"1st_place_medal"`
-	Second_place_medal string `json:"2st_place_medal"`
-	Third_place_medal  string `json:"3st_place_medal"`
-	Eight_ball         string `json:"8ball"`
-	A_emoji            string `json:"a"`
-	AB_emoji           string `json:"ab"`
-	Abacus             string `json:"abacus"`
-	ABC_emoji          string `json:"abc"`
-	ABCD_emoji         string `json:"abcd"`
-}*/
-
 // ---------------------------------------------- Internal functions to run this module --------------------------------------
 
 //
