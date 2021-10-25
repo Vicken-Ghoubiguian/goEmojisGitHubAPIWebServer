@@ -9,8 +9,6 @@ import (
 	"os"
 )
 
-// ---------------------------------------------- Internal types and structures to run this module --------------------------------------
-
 // Definition of all colors used in this project
 const (
 	reset  = "\033[0m"
@@ -24,13 +22,10 @@ const (
 	white  = "\033[97m"
 )
 
-// ---------------------------------------------- Internal functions to run this module --------------------------------------
-
 //
 func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	//
-	//var currentlistOfEmojisFromGitHub listOfEmojisFromGitHub
 	var currentlistOfEmojisFromGitHub map[string]string
 
 	//
@@ -89,8 +84,6 @@ func otherErrorHandlerFunction(err error) {
 		os.Exit(1)
 	}
 }
-
-// ---------------------------------------------- External function to use this module --------------------------------------
 
 //
 func main() {
