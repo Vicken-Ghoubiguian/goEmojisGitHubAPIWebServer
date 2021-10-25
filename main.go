@@ -50,7 +50,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 	dateTime := time.Now()
 
 	//
-	fmt.Println(green + "[" + dateTime.String() + "] New device connected with the followiing IP adress: " + getIP(r) + "..." + reset)
+	fmt.Println(green + "[" + dateTime.String() + "] New device connected: " + getIP(r) + "..." + reset)
 
 	//
 	if r.URL.Path != "/" {
