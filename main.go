@@ -29,7 +29,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 	var currentlistOfEmojisFromGitHub map[string]string
 
 	//
-	fmt.Println(green + "\n---------------------------------\n" + reset)
+	fmt.Println(green + "[]" + reset)
 
 	//
 	if r.URL.Path != "/" {
@@ -72,6 +72,9 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		fmt.Fprintf(w, "%s", currentlistOfEmojisFromGitHub)
 	}
+
+	//
+	fmt.Println(blue + "---------------------------------" + reset)
 }
 
 // Function which display other errors when they occurs...
@@ -92,7 +95,7 @@ func otherErrorHandlerFunction(err error) {
 func main() {
 
 	//
-	fmt.Println(purple + "\n---------------------------------\n" + reset)
+	fmt.Println(purple + "\n---------------------------------" + reset)
 
 	//
 	http.HandleFunc("/", helloWorldServerFunc)
