@@ -47,9 +47,6 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 	var currentlistOfEmojisFromGitHub map[string]string
 
 	//
-	//dateTime := time.Now()
-
-	//
 	fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIP(r) + "..." + reset)
 
 	//
