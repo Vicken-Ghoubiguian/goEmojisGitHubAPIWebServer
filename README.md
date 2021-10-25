@@ -4,6 +4,15 @@ Web server written in Go to collect and display all the emojis used in GitHub vi
 
 ## Contents
 
+1. [Introduction](#introduction)
+2. [Presentation](#presentation)
+3. [Project's structure](#project_s_structure)
+4. [How was this project developed ?](#how_was_this_project_developed)
+5. [How does this project work ?](#how_does_this_project_work)
+6. [How to use it ?](#how_to_use_it)
+7. [Useful links](#useful_links)
+8. [Conclusion](#conclusion)
+
 <a name="introduction"></a>
 ## Introduction
 
