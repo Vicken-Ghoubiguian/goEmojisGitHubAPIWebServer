@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"time"
 )
 
 // Definition of all colors used in this project
@@ -23,13 +24,33 @@ const (
 )
 
 //
+func getIP(r *http.Request) string {
+
+	//
+	forwarded := r.Header.Get("X-FORWARDED-FOR")
+
+	//
+	if forwarded != "" {
+
+		//
+		return forwarded
+	}
+
+	//
+	return r.RemoteAddr
+}
+
+//
 func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	//
 	var currentlistOfEmojisFromGitHub map[string]string
 
 	//
-	fmt.Println(green + "[]" + r.RemoteAddr + "..." + reset)
+	dateTime := time.Now()
+
+	//
+	fmt.Println(green + "[" + dateTime.String() + "] New device connected with the followiing IP adress: " + getIP(r) + "..." + reset)
 
 	//
 	if r.URL.Path != "/" {
