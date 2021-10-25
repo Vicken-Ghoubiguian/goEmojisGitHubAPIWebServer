@@ -25,7 +25,7 @@ const (
 )
 
 //
-type listOfEmojisFromGitHub struct {
+/*type listOfEmojisFromGitHub struct {
 	Plus_hand          string `json:"+1"`
 	Minus_hand         string `json:"-1"`
 	Hundred            string `json:"100"`
@@ -39,7 +39,7 @@ type listOfEmojisFromGitHub struct {
 	Abacus             string `json:"abacus"`
 	ABC_emoji          string `json:"abc"`
 	ABCD_emoji         string `json:"abcd"`
-}
+}*/
 
 // ---------------------------------------------- Internal functions to run this module --------------------------------------
 
@@ -47,7 +47,8 @@ type listOfEmojisFromGitHub struct {
 func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	//
-	var currentlistOfEmojisFromGitHub listOfEmojisFromGitHub
+	//var currentlistOfEmojisFromGitHub listOfEmojisFromGitHub
+	var currentlistOfEmojisFromGitHub map[string]string
 
 	//
 	if r.URL.Path != "/" {
@@ -76,17 +77,19 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		otherErrorHandlerFunction(err)
 
+		truc := []byte(getEmojisFromGitHubAPIJsonString)
+
 		//Single instruction to convert weather_json_string []byte variable to string
-		err = json.Unmarshal(getEmojisFromGitHubAPIJsonString, &currentlistOfEmojisFromGitHub)
+		err = json.Unmarshal(truc, &currentlistOfEmojisFromGitHub)
 
 		//
 		otherErrorHandlerFunction(err)
 
 		//
-		//fmt.Println(green + currentlistOfEmojisFromGitHub.Hundred + reset)
+		fmt.Println(currentlistOfEmojisFromGitHub)
 
 		//
-		fmt.Fprintf(w, green+"%s"+reset, getEmojisFromGitHubAPIJsonString)
+		fmt.Fprintf(w, green+"%s"+reset, currentlistOfEmojisFromGitHub["+1"])
 	}
 }
 
