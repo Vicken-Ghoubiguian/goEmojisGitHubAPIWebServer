@@ -29,6 +29,9 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 	var currentlistOfEmojisFromGitHub map[string]string
 
 	//
+	fmt.Println(green + "\n---------------------------------\n" + reset)
+
+	//
 	if r.URL.Path != "/" {
 
 		//
@@ -87,6 +90,9 @@ func otherErrorHandlerFunction(err error) {
 
 //
 func main() {
+
+	//
+	fmt.Println(purple + "\n---------------------------------\n" + reset)
 
 	//
 	http.HandleFunc("/", helloWorldServerFunc)
