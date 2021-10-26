@@ -10,8 +10,9 @@ Web server written in Go to collect and display all the emojis 🧮 ⚓ 🥈 �
 4. [How was this project developed ?](#how_was_this_project_developed)
 5. [How does this project work ?](#how_does_this_project_work)
 6. [How to use it ?](#how_to_use_it)
-7. [Useful links](#useful_links)
-8. [Conclusion](#conclusion)
+7. [Where to use it ?](#where_to_use_it)
+8. [Useful links](#useful_links)
+9. [Conclusion](#conclusion)
 
 <a name="introduction"></a>
 ## Introduction
@@ -30,6 +31,9 @@ Web server written in Go to collect and display all the emojis 🧮 ⚓ 🥈 �
 
 <a name="how_to_use_it"></a>
 ## How to use it ?
+
+<a name="where_to_use_it"></a>
+## Where to use it ?
 
 <a name="useful_links"></a>
 ## Useful links
