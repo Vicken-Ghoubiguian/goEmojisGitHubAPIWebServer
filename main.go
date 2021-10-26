@@ -26,7 +26,7 @@ const (
 	white  = "\033[97m"
 )
 
-//
+// Function to return client's IP adress
 func getIP(r *http.Request) string {
 
 	//
@@ -98,7 +98,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(blue + "---------------------------------" + reset)
 }
 
-//Function to handle Ctrl+c signal
+// Function to handle Ctrl+c signal
 func setup_ctrl_c_handler() {
 
 	//
@@ -124,7 +124,7 @@ func setup_ctrl_c_handler() {
 	}()
 }
 
-//Function to handle Ctrl+Z signal
+// Function to handle Ctrl+Z signal
 func setup_ctrl_z_handler() {
 
 	//
