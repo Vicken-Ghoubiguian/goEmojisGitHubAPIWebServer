@@ -57,9 +57,6 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 	var currentlistOfEmojisFromGitHub map[string]string
 
 	//
-	fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIP(r) + "..." + reset)
-
-	//
 	if r.URL.Path != "/" {
 
 		//
@@ -110,6 +107,9 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
 
 		//
+		fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIP(r) + "..." + reset)
+
+		//
 		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub})
 
 		//
@@ -139,7 +139,7 @@ func setup_ctrl_c_handler() {
 		fmt.Println(cyan + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Goodbye, we will miss you (" + strconv.Itoa(os.Getpid()) + ")..." + reset)
 
 		//
-		fmt.Println(purple + "\n---------------------------------" + reset)
+		fmt.Println(purple + "---------------------------------" + reset)
 
 		//
 		os.Exit(0)
@@ -165,7 +165,7 @@ func setup_ctrl_z_handler() {
 		fmt.Println(cyan + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Pressed Ctrl+z, suspended process " + strconv.Itoa(os.Getpid()) + "..." + reset + "\n")
 
 		//
-		fmt.Println(purple + "\n---------------------------------" + reset)
+		fmt.Println(purple + "---------------------------------" + reset)
 
 	}()
 }
@@ -188,7 +188,7 @@ func otherErrorHandlerFunction(err error) {
 func main() {
 
 	//
-	fmt.Println(purple + "\n---------------------------------" + reset)
+	fmt.Println(purple + "---------------------------------" + reset)
 
 	//
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
