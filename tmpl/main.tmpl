@@ -8,7 +8,11 @@
 	</head>
 	<body>
 	   <p>Hello world !</p>
-       <p>{{.ListOfEmojisFromGitHub}}</p>
+       <div>
+            {{ range $key, $value := .ListOfEmojisFromGitHub }}
+                <li><strong>{{ $key }}</strong>: {{ $value }}</li>
+            {{ end }}
+       </div>
 	</body>
 </html>
 {{end}}
