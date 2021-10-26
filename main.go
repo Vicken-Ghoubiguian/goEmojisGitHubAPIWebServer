@@ -142,6 +142,9 @@ func setup_ctrl_z_handler() {
 		//
 		fmt.Println(cyan + "Pressed Ctrl+z, suspended process " + strconv.Itoa(os.Getpid()) + "..." + reset + "\n")
 
+		//
+		fmt.Println(purple + "\n---------------------------------" + reset)
+
 	}()
 }
 
