@@ -7,6 +7,9 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"os/signal"
+	"strconv"
+	"syscall"
 	"time"
 )
 
@@ -93,6 +96,39 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	//
 	fmt.Println(blue + "---------------------------------" + reset)
+}
+
+//Function to handle Ctrl+c signal
+func setup_ctrl_c_handler() {
+
+	c := make(chan os.Signal, 2)
+
+	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
+
+	go func() {
+
+		<-c
+
+		fmt.Println(cyan + "Goodbye, we will miss you (" + strconv.Itoa(os.Getpid()) + ")..." + reset + "\n")
+
+		os.Exit(0)
+	}()
+}
+
+//Function to handle Ctrl+Z signal
+func setup_ctrl_z_handler() {
+
+	z := make(chan os.Signal, 20)
+
+	signal.Notify(z, os.Interrupt, syscall.SIGTSTP)
+
+	go func() {
+
+		<-z
+
+		fmt.Println(cyan + "Pressed Ctrl+z, suspended process " + strconv.Itoa(os.Getpid()) + "..." + reset + "\n")
+
+	}()
 }
 
 // Function which display other errors when they occurs...
