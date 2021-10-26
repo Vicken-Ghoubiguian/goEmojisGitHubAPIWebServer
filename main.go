@@ -164,7 +164,7 @@ func setup_ctrl_z_handler() {
 	}()
 }
 
-// Function which display other errors when they occurs...
+// Function which display other errors when they occurs
 func otherErrorHandlerFunction(err error) {
 
 	//
@@ -178,7 +178,7 @@ func otherErrorHandlerFunction(err error) {
 	}
 }
 
-//
+// Function to execute the whole program
 func main() {
 
 	//
