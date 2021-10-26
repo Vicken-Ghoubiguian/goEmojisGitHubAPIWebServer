@@ -63,10 +63,22 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/" {
 
 		//
-		fmt.Fprintf(w, "Error ? Yeah....")
+		//fmt.Fprintf(w, "Error ? Yeah....")
 
 		//
 		fmt.Println(red + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Error ? Yeah...." + reset)
+
+		//
+		t := template.New("Error tmpl")
+
+		//
+		t = template.Must(t.ParseFiles("tmpl/error.tmpl"))
+
+		//
+		err := t.ExecuteTemplate(w, "error", Page{"goEmojisGitHubAPIWebServer", nil})
+
+		//
+		otherErrorHandlerFunction(err)
 
 		//
 	} else {
@@ -98,7 +110,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//fmt.Fprintf(w, "%s", currentlistOfEmojisFromGitHub)
 
 		//
-		t := template.New("New tmpl")
+		t := template.New("Main tmpl")
 
 		//
 		t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
