@@ -182,6 +182,9 @@ func main() {
 	fmt.Println(purple + "\n---------------------------------" + reset)
 
 	//
+	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
+
+	//
 	setup_ctrl_c_handler()
 
 	//
