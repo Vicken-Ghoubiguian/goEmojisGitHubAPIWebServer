@@ -114,7 +114,10 @@ func setup_ctrl_c_handler() {
 		<-c
 
 		//
-		fmt.Println(cyan + "Goodbye, we will miss you (" + strconv.Itoa(os.Getpid()) + ")..." + reset + "\n")
+		fmt.Println(cyan + "Goodbye, we will miss you (" + strconv.Itoa(os.Getpid()) + ")..." + reset)
+
+		//
+		fmt.Println(purple + "\n---------------------------------" + reset)
 
 		//
 		os.Exit(0)
