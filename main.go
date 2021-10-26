@@ -114,7 +114,7 @@ func setup_ctrl_c_handler() {
 		<-c
 
 		//
-		fmt.Println(cyan + "Goodbye, we will miss you (" + strconv.Itoa(os.Getpid()) + ")..." + reset)
+		fmt.Println(cyan + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Goodbye, we will miss you (" + strconv.Itoa(os.Getpid()) + ")..." + reset)
 
 		//
 		fmt.Println(purple + "\n---------------------------------" + reset)
@@ -140,7 +140,7 @@ func setup_ctrl_z_handler() {
 		<-z
 
 		//
-		fmt.Println(cyan + "Pressed Ctrl+z, suspended process " + strconv.Itoa(os.Getpid()) + "..." + reset + "\n")
+		fmt.Println(cyan + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Pressed Ctrl+z, suspended process " + strconv.Itoa(os.Getpid()) + "..." + reset + "\n")
 
 		//
 		fmt.Println(purple + "\n---------------------------------" + reset)
