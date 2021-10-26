@@ -9,9 +9,18 @@
 	<body>
 	   <p>Hello world !</p>
        <div>
-            {{ range $key, $value := .ListOfEmojisFromGitHub }}
-                <li>{{ $key }}: <img src='{{ $value }}' alt='{{ $key }}'></li>
-            {{ end }}
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">The table header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range $key, $value := .ListOfEmojisFromGitHub }}
+                        <tr><td>{{ $key }}</td><td><img src='{{ $value }}' alt='{{ $key }}'></td></tr>
+                    {{ end }}
+                </tbody>
+            </table>
        </div>
 	</body>
 </html>
