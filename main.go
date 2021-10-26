@@ -94,12 +94,16 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		//fmt.Fprintf(w, "%s", currentlistOfEmojisFromGitHub)
 
+		//
 		t := template.New("New tmpl")
 
+		//
 		t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
 
+		//
 		err = t.ExecuteTemplate(w, "main", nil)
 
+		//
 		otherErrorHandlerFunction(err)
 	}
 
