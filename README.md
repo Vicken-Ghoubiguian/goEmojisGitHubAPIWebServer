@@ -17,6 +17,8 @@ Web server written in Go to collect and display all the emojis 🧮 ⚓ 🥈 �
 <a name="introduction"></a>
 ## Introduction
 
+Coming soon...
+
 <a name="presentation"></a>
 ## Presentation
 
