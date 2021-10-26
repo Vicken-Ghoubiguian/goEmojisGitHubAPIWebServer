@@ -30,7 +30,7 @@ const (
 //
 type Page struct {
 	Title                  string
-	listOfEmojisFromGitHub map[string]string
+	ListOfEmojisFromGitHub map[string]string
 }
 
 // Function to return client's IP adress
