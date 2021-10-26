@@ -66,7 +66,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Error ? Yeah....")
 
 		//
-		fmt.Println(red + "Error ? Yeah...." + reset)
+		fmt.Println(red + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Error ? Yeah...." + reset)
 
 		//
 	} else {
