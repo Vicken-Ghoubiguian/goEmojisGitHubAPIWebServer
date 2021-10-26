@@ -10,7 +10,7 @@
 	   <p>Hello world !</p>
        <div>
             {{ range $key, $value := .ListOfEmojisFromGitHub }}
-                <li><strong>{{ $key }}</strong>: {{ $value }}</li>
+                <li><strong>{{ $key }}</strong>: <img src='{{ $value }}' alt='{{ $key }}'></li>
             {{ end }}
        </div>
 	</body>
