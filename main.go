@@ -29,7 +29,8 @@ const (
 
 //
 type Page struct {
-	Title string
+	Title                  string
+	listOfEmojisFromGitHub map[string]string
 }
 
 // Function to return client's IP adress
@@ -106,7 +107,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
 
 		//
-		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer"})
+		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub})
 
 		//
 		otherErrorHandlerFunction(err)
