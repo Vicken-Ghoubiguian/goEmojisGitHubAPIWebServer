@@ -27,6 +27,11 @@ const (
 	white  = "\033[97m"
 )
 
+//
+type Page struct {
+	Title string
+}
+
 // Function to return client's IP adress
 func getIP(r *http.Request) string {
 
@@ -101,7 +106,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
 
 		//
-		err = t.ExecuteTemplate(w, "main", nil)
+		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer"})
 
 		//
 		otherErrorHandlerFunction(err)
