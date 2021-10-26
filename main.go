@@ -103,9 +103,6 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		otherErrorHandlerFunction(err)
 
-		//fmt.Println(green + currentlistOfEmojisFromGitHub["+1"] + reset)
-		//fmt.Fprintf(w, "%s", currentlistOfEmojisFromGitHub)
-
 		//
 		t := template.New("Main tmpl")
 
