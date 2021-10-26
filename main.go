@@ -4,6 +4,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"html/template"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -91,7 +92,15 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//fmt.Println(green + currentlistOfEmojisFromGitHub["+1"] + reset)
 
 		//
-		fmt.Fprintf(w, "%s", currentlistOfEmojisFromGitHub)
+		//fmt.Fprintf(w, "%s", currentlistOfEmojisFromGitHub)
+
+		t := template.New("New tmpl")
+
+		t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
+
+		err = t.ExecuteTemplate(w, "main", nil)
+
+		otherErrorHandlerFunction(err)
 	}
 
 	//
