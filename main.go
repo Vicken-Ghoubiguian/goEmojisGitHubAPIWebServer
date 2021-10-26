@@ -163,6 +163,12 @@ func main() {
 	fmt.Println(purple + "\n---------------------------------" + reset)
 
 	//
+	setup_ctrl_c_handler()
+
+	//
+	setup_ctrl_z_handler()
+
+	//
 	http.HandleFunc("/", helloWorldServerFunc)
 
 	//
