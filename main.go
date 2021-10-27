@@ -27,7 +27,7 @@ const (
 	white  = "\033[97m"
 )
 
-//
+// Definition of the Page structure used in this project to define a page
 type Page struct {
 	Title                  string
 	ListOfEmojisFromGitHub map[string]string
@@ -116,7 +116,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		otherErrorHandlerFunction(err)
 	}
 
-	//
+	// To display the blue separator
 	fmt.Println(blue + "---------------------------------" + reset)
 }
 
@@ -138,7 +138,7 @@ func setup_ctrl_c_handler() {
 		//
 		fmt.Println(cyan + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Goodbye, we will miss you (" + strconv.Itoa(os.Getpid()) + ")..." + reset)
 
-		//
+		// To display the purple separator
 		fmt.Println(purple + "---------------------------------" + reset)
 
 		//
@@ -164,7 +164,7 @@ func setup_ctrl_z_handler() {
 		//
 		fmt.Println(cyan + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Pressed Ctrl+z, suspended process " + strconv.Itoa(os.Getpid()) + "..." + reset + "\n")
 
-		//
+		// To display the purple separator
 		fmt.Println(purple + "---------------------------------" + reset)
 
 	}()
@@ -187,16 +187,16 @@ func otherErrorHandlerFunction(err error) {
 // Function to execute the whole program
 func main() {
 
-	//
+	// To display the purple separator
 	fmt.Println(purple + "---------------------------------" + reset)
 
-	//
+	// To handle the 'assets' directory to use images, css and js files
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
 
-	//
+	// Implementation of the CTRL - C handler
 	setup_ctrl_c_handler()
 
-	//
+	// Implementation of the CTRL - Z handler
 	setup_ctrl_z_handler()
 
 	//
