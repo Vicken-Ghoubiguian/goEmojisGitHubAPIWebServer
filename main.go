@@ -59,7 +59,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 	//
 	if r.URL.Path != "/" {
 
-		//
+		// To display information message in cyan
 		fmt.Println(red + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Error ? Yeah...." + reset)
 
 		//
@@ -94,7 +94,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
 		truc := []byte(getEmojisFromGitHubAPIJsonString)
 
-		//Single instruction to convert weather_json_string []byte variable to string
+		// Single instruction to convert weather_json_string []byte variable to string
 		err = json.Unmarshal(truc, &currentlistOfEmojisFromGitHub)
 
 		//
@@ -106,7 +106,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
 
-		//
+		// To display information message in green
 		fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIP(r) + "..." + reset)
 
 		//
@@ -135,13 +135,13 @@ func setup_ctrl_c_handler() {
 		//
 		<-c
 
-		//
+		// To display information message in cyan
 		fmt.Println(cyan + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Goodbye, we will miss you (" + strconv.Itoa(os.Getpid()) + ")..." + reset)
 
 		// To display the purple separator
 		fmt.Println(purple + "---------------------------------" + reset)
 
-		//
+		// Exit the program (with exit code 0 (without any error))
 		os.Exit(0)
 	}()
 }
@@ -161,7 +161,7 @@ func setup_ctrl_z_handler() {
 		//
 		<-z
 
-		//
+		// To display information message
 		fmt.Println(cyan + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Pressed Ctrl+z, suspended process " + strconv.Itoa(os.Getpid()) + "..." + reset + "\n")
 
 		// To display the purple separator
@@ -173,13 +173,13 @@ func setup_ctrl_z_handler() {
 // Function which display other errors when they occurs
 func otherErrorHandlerFunction(err error) {
 
-	//
+	// If the error is null (in this case, there is no error)
 	if err != nil {
 
-		//
+		// To display the error in red
 		fmt.Println(red + err.Error() + reset)
 
-		//
+		// Exit the program (with exit code 1 (with error))
 		os.Exit(1)
 	}
 }
