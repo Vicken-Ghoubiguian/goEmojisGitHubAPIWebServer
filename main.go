@@ -66,7 +66,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		t := template.New("Error tmpl")
 
 		//
-		t = template.Must(t.ParseFiles("tmpl/error.tmpl", "tmpl/footer.tmpl"))
+		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/error.tmpl", "tmpl/footer.tmpl"))
 
 		//
 		err := t.ExecuteTemplate(w, "error", Page{"goEmojisGitHubAPIWebServer", nil})
