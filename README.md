@@ -40,7 +40,9 @@ Coming soon...
 <a name="useful_links"></a>
 ## Useful links
 
-* [Experimenting with JSON (structured and unstructured data) and Go - Henry S. Coelho](https://hcoelho.com/blog/62/Experimenting_with_JSON_structured_and_unstructured_data_and_Go)
+* [Experimenting with JSON (structured and unstructured data) and Go - Henry S. Coelho](https://hcoelho.com/blog/62/Experimenting_with_JSON_structured_and_unstructured_data_and_Go),
+* [jQuery UI - official website](https://jqueryui.com),
+* [jQuery UI's ThemeRoller - official website](https://jqueryui.com/themeroller/)
 
 <a name="conclusion"></a>
 ## Conclusion
