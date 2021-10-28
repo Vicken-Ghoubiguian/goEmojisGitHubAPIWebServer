@@ -3,10 +3,49 @@
     {{template "header"}}
 
                 <title>{{.Title}}</title>
+                <script>
+                    $(function() {
+                        $( "#github_emojis_accordion" ).accordion();
+                    });
+                </script>
             </head>
         <body class="main_body">
 	   <p style="color: red;">Hello world !</p>
        <div>
+            <div id="github_emojis_accordion">
+                <h3>Section 1</h3>
+                <div>
+                    <p>
+                    1
+                    </p>
+                </div>
+                <h3>Section 2</h3>
+                <div>
+                    <p>
+                    2
+                    </p>
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                    <p>
+                    3
+                    </p>
+                    <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    </ul>
+                </div>
+                <h3>Section 4</h3>
+                <div>
+                    <p>
+                    Euh...
+                    </p>
+                    <p>
+                    Yh....
+                    </p>
+                </div>
+            </div>
             <table class="main_table">
                 <thead>
                     <tr>
