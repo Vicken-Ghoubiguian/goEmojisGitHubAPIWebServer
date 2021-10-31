@@ -17,7 +17,7 @@
                         </thead>
                         <tbody>
                             {{ range $key, $value := .ListOfEmojisFromGitHub }}
-                                <tr><td><img src='{{ $value }}' alt='{{ $key }}' width='64' height='64'></td><td>{{ $key }}</td></tr>
+                                <tr><td><img src='{{ $value }}' alt='{{ $key }}' width='64' height='64' data-toggle='tooltip' title='{{ $key }}'></td><td>{{ $key }}</td></tr>
                             {{ end }}
                         </tbody>
                     </table>
