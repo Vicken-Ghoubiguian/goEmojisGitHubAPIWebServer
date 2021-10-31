@@ -99,9 +99,6 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		err = json.Unmarshal(getEmojisFromGitHubAPIJsonStringAsByte, &currentlistOfEmojisFromGitHub)
 
 		//
-		//currentlistOfEmojisFromGitHub = cleanListOfEmojisFromGitHubFunc(currentlistOfEmojisFromGitHub)
-
-		//
 		otherErrorHandlerFunction(err)
 
 		//
