@@ -92,10 +92,14 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		otherErrorHandlerFunction(err)
 
+		//
 		truc := []byte(getEmojisFromGitHubAPIJsonString)
 
 		// Single instruction to convert weather_json_string []byte variable to string
 		err = json.Unmarshal(truc, &currentlistOfEmojisFromGitHub)
+
+		//
+		//currentlistOfEmojisFromGitHub = cleanListOfEmojisFromGitHubFunc(currentlistOfEmojisFromGitHub)
 
 		//
 		otherErrorHandlerFunction(err)
@@ -183,6 +187,30 @@ func otherErrorHandlerFunction(err error) {
 		os.Exit(1)
 	}
 }
+
+//
+/*func cleanListOfEmojisFromGitHubFunc(listOfEmojisFromGitHub map[string]string) map[string]string {
+
+	//
+	for key, value := range listOfEmojisFromGitHub {
+
+		//
+		resp, err := http.Head(value)
+
+		//
+		otherErrorHandlerFunction(err)
+
+		//
+		if resp.StatusCode == http.StatusNotFound {
+
+			//
+			delete(listOfEmojisFromGitHub, key)
+		}
+	}
+
+	//
+	return listOfEmojisFromGitHub
+}*/
 
 // Function to execute the whole program
 func main() {
