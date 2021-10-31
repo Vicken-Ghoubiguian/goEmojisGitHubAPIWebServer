@@ -1,7 +1,7 @@
 $(function() {
 
     //
-    $("[data-toggle='tooltip']").tooltip({
+    $(".main_emoji_image").tooltip({
         
         html: true,
         tooltipClass: "main_tooltip-styling",
