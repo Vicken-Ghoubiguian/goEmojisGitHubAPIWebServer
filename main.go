@@ -185,30 +185,6 @@ func otherErrorHandlerFunction(err error) {
 	}
 }
 
-//
-/*func cleanListOfEmojisFromGitHubFunc(listOfEmojisFromGitHub map[string]string) map[string]string {
-
-	//
-	for key, value := range listOfEmojisFromGitHub {
-
-		//
-		resp, err := http.Head(value)
-
-		//
-		otherErrorHandlerFunction(err)
-
-		//
-		if resp.StatusCode == http.StatusNotFound {
-
-			//
-			delete(listOfEmojisFromGitHub, key)
-		}
-	}
-
-	//
-	return listOfEmojisFromGitHub
-}*/
-
 // Function to execute the whole program
 func main() {
 
