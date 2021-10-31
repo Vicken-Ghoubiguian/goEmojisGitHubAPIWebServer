@@ -35,7 +35,8 @@
 
 /**/
 .main_tooltip-styling{
-    
-    font-family: cursive;
+
+    font-family: cursive !important;
+    font-size: 2.5em !important;
     color: red !important;
 }
