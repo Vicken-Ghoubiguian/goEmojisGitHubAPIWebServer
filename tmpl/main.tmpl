@@ -11,13 +11,12 @@
                     <table class="table table-responsive" id="main_table">
                         <thead>
                             <tr>
-                                <th scope="col">Image</th>
-                                <th scope="col">Name</th>
+                                <th scope="col">Emoji</th>
                             </tr>
                         </thead>
                         <tbody>
                             {{ range $key, $value := .ListOfEmojisFromGitHub }}
-                                <tr><td><img src='{{ $value }}' alt='{{ $key }}' width='64' height='64' data-toggle='tooltip' title='{{ $key }}'></td><td>{{ $key }}</td></tr>
+                                <tr><td><img src='{{ $value }}' alt='{{ $key }}' width='64' height='64' data-toggle='tooltip' data-placement='right' title='<span style="color:#0f0;">{{ $key }}</span>'></td></tr>
                             {{ end }}
                         </tbody>
                     </table>
