@@ -10,3 +10,19 @@
     text-align: center;
     width: 40%;
 }
+
+#main_page_title {
+
+    color: red;
+    margin-bottom: 0.8em;
+}
+
+#main_page_subtitle {
+
+    margin-bottom: 0.8em;
+}
+
+.main_alignement {
+
+    text-align: center;
+}
