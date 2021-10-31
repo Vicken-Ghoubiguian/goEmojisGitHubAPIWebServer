@@ -1,6 +1,13 @@
 $(function() {
 
     //
-    $("[data-toggle='tooltip']").tooltip({html: true});
+    $("[data-toggle='tooltip']").tooltip({
+        
+        html: true,
+        show: {
+            effect: "slideDown",
+            delay: 250
+      }
+    });
 
 });
