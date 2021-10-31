@@ -1,8 +1,10 @@
+/**/
 .main_body {
 
     font-family: cursive;
 }
 
+/**/
 #main_table {
 
     margin-left: auto;
@@ -11,17 +13,21 @@
     width: 40%;
 }
 
+/**/
 #main_page_title {
 
     color: red;
+    margin-top: 0.4em;
     margin-bottom: 0.8em;
 }
 
+/**/
 #main_page_subtitle {
 
     margin-bottom: 0.8em;
 }
 
+/**/
 .main_alignement {
 
     text-align: center;
