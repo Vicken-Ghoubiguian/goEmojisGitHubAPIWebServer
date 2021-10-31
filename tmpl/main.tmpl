@@ -16,7 +16,7 @@
                         </thead>
                         <tbody>
                             {{ range $key, $value := .ListOfEmojisFromGitHub }}
-                                <tr><td><img src='{{ $value }}' alt='{{ $key }}' onerror='this.parentNode.removeChild(this)' width='64' height='64' data-toggle='tooltip' data-placement='right' title='{{ $key }}'></td></tr>
+                                <tr><td><img src='{{ $value }}' alt='{{ $key }}' onerror='this.parentNode.removeChild(this); console.clear();' width='64' height='64' data-toggle='tooltip' data-placement='right' title='{{ $key }}'></td></tr>
                             {{ end }}
                         </tbody>
                     </table>
