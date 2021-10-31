@@ -5,22 +5,22 @@
                 <title>{{.Title}}</title>
             </head>
         <body class="main_body">
-	   <p style="color: red;">Hello world !</p>
-       <div>
-            <table class="table table-responsive" id="main_table">
-                <thead>
-                    <tr>
-                        <th scope="col">Image</th>
-                        <th scope="col">Name</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{ range $key, $value := .ListOfEmojisFromGitHub }}
-                        <tr><td><img src='{{ $value }}' alt='{{ $key }}' width='64' height='64'></td><td>{{ $key }}</td></tr>
-                    {{ end }}
-                </tbody>
-            </table>
-       </div>
+            <p>🧮 ⚓ 🥈 🚡 🥇 🇦🇸 🥑 ⚗️ 🉑 🥉 ⚕️ 🧑‍🚀 🇳🇷 🐙 🎠 🛠️ 🗾 📽️ 🎞️ 🇮🇴 🎰 ☦️ 🇰🇵 🇲🇵 🩹 🚡 👶 ⚔️ 🥖 🇦🇲 ⏰ 🐱 😽 💕 🇦🇱 🇦🇽 💪 🥄 🇧🇸 ♒ 🚑 🐤 👽 🇦🇸 🏺 💢 👼 🏀 🚲 👙 🎱 🔋 🎹 🎵 🐜 📆 🌇 🍎 🇦🇶 💔 👾 🧬 🪕 🇯🇪 🤖 ☄️ 🌃 ♾️ ℹ️</p>
+            <div>
+                    <table class="table table-responsive" id="main_table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Image</th>
+                                <th scope="col">Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{ range $key, $value := .ListOfEmojisFromGitHub }}
+                                <tr><td><img src='{{ $value }}' alt='{{ $key }}' width='64' height='64'></td><td>{{ $key }}</td></tr>
+                            {{ end }}
+                        </tbody>
+                    </table>
+            </div>
 
         {{template "footer"}}
 
