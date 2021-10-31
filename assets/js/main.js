@@ -1,8 +1,9 @@
 $(function() {
 
     //
-    //$("#github_emojis_accordion").accordion();
+    $("#main_page_title").tooltip();
 
     //
+    $("#main_page_subtitle").tooltip();
 
 });
