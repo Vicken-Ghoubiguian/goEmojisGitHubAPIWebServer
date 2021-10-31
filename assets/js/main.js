@@ -1,18 +1,10 @@
 $(function() {
 
     //
-    $("#main_page_title").tooltip({
+    $("[data-toggle='tooltip']").tooltip({
         show: {
-            effect: "slideDown",
-            delay: 250
-          }
-    });
-
-    //
-    $("#main_page_subtitle").tooltip({
-        show: {
-            effect: "slideDown",
-            delay: 250
+            effect: "explode",
+            delay: 1500
           }
     });
 
