@@ -5,6 +5,13 @@
 }
 
 /**/
+.error_displayer {
+
+    color: red;
+    font-family: cursive;
+}
+
+/**/
 #main_table {
 
     margin-left: auto;

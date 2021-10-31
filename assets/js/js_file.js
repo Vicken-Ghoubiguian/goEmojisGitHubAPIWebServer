@@ -14,4 +14,8 @@ $(function() {
             delay: 250
         }
     });
+
+    //
+    $("#error_dialog").dialog({modal: true});
+    
 });
