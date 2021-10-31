@@ -93,10 +93,10 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		otherErrorHandlerFunction(err)
 
 		//
-		truc := []byte(getEmojisFromGitHubAPIJsonString)
+		getEmojisFromGitHubAPIJsonStringAsByte := []byte(getEmojisFromGitHubAPIJsonString)
 
 		// Single instruction to convert weather_json_string []byte variable to string
-		err = json.Unmarshal(truc, &currentlistOfEmojisFromGitHub)
+		err = json.Unmarshal(getEmojisFromGitHubAPIJsonStringAsByte, &currentlistOfEmojisFromGitHub)
 
 		//
 		//currentlistOfEmojisFromGitHub = cleanListOfEmojisFromGitHubFunc(currentlistOfEmojisFromGitHub)
