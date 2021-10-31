@@ -16,7 +16,7 @@
                 </thead>
                 <tbody>
                     {{ range $key, $value := .ListOfEmojisFromGitHub }}
-                        <tr class="main_table"><td>{{ $key }}</td><td><img src='{{ $value }}' alt='{{ $key }}' width='64' height='64'></td></tr>
+                        <tr class="main_table_td"><td>{{ $key }}</td><td><img src='{{ $value }}' alt='{{ $key }}' width='64' height='64'></td></tr>
                     {{ end }}
                 </tbody>
             </table>
