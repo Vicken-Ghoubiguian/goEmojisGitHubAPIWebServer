@@ -5,6 +5,14 @@
 }
 
 /**/
+#main_footer_configuration {
+
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/**/
 .footer_image {
 
     cursor: pointer;
