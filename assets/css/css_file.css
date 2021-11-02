@@ -98,3 +98,8 @@
 
     cursor: help;
 }
+
+/**/
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
