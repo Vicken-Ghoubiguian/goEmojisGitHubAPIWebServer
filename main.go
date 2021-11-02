@@ -66,7 +66,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		t := template.New("Error tmpl")
 
 		//
-		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/error.tmpl", "tmpl/footer.tmpl"))
+		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/error.tmpl", "tmpl/footer.tmpl", "tmpl/end.tmpl"))
 
 		//
 		err := t.ExecuteTemplate(w, "error", Page{"goEmojisGitHubAPIWebServer", nil})
@@ -105,7 +105,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		t := template.New("Main tmpl")
 
 		//
-		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/main.tmpl", "tmpl/footer.tmpl"))
+		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/main.tmpl", "tmpl/footer.tmpl", "tmpl/end.tmpl"))
 
 		// To display information message in green
 		fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIP(r) + "..." + reset)
