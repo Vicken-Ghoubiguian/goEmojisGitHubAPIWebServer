@@ -3,7 +3,7 @@ $(function() {
     //
     $(".footer_image").tooltip({
         html: true,
-
+        tooltipClass: "footer_image",
         show: {
             effect: "explode",
             delay: 250

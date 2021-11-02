@@ -11,6 +11,13 @@
 }
 
 /**/
+.footer_image {
+
+    color: red !important;
+    font-family: cursive !important;
+}
+
+/**/
 .error_displayer {
 
     color: red;
