@@ -43,6 +43,16 @@
 }
 
 /**/
+.main_app_presentation_tooltip_styling {
+
+    font-family: cursive !important;
+    font-size: 2.5em !important;
+    color: red !important;
+    max-width: 10000em !important;
+    max-height: 10000em !important;
+}
+
+/**/
 .main_emoji_image_tooltip_styling {
 
     font-family: cursive !important;

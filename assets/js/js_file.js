@@ -4,7 +4,7 @@ $(function() {
     $(".main_app_presentation").tooltip({
 
         html: true,
-        
+        tooltipClass: "main_app_presentation_tooltip_styling",
     });
 
     //
