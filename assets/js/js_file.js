@@ -1,6 +1,7 @@
 $(function() {
 
     //
+    $(".main_app_presentation").tooltip();
 
     //
     $(".main_emoji_image").tooltip({
