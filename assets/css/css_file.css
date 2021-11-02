@@ -16,6 +16,15 @@
 .footer_image {
 
     cursor: pointer;
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+          transition: transform 0.8s ease-in-out;
+}
+
+/**/
+.footer_image:hover {
+
+    -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 /**/
