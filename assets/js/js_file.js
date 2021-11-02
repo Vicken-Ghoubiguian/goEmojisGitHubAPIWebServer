@@ -52,7 +52,8 @@ $(function() {
         open: function(event, ui) {
             $(".ui-dialog-titlebar-close", ui.dialog || ui).hide();
         }
-    });
+        
+    }).prev(".ui-dialog-titlebar").css("background","red").css("color", "white").css("font-family", "cursive");
     
 });
 
