@@ -103,3 +103,15 @@
 .ui-dialog-titlebar-close {
     visibility: hidden;
 }
+
+/**/
+#error_redirection_link {
+
+    color: purple;
+}
+
+/**/
+#error_redirection_link:hover {
+
+    color: red;
+}
