@@ -1,6 +1,20 @@
 $(function() {
 
     //
+    $(".footer_image").tooltip({
+        html: true,
+
+        show: {
+            effect: "explode",
+            delay: 250
+        },
+        hide: {
+            effect: "explode",
+            delay: 250
+        }
+    });
+
+    //
     $(".main_app_presentation").tooltip({
 
         html: true,
