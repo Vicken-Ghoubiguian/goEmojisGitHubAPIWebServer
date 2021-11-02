@@ -5,6 +5,12 @@
 }
 
 /**/
+.footer_image {
+
+    cursor: pointer;
+}
+
+/**/
 .error_displayer {
 
     color: red;
