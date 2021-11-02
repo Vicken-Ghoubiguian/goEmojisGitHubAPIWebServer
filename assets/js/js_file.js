@@ -48,3 +48,13 @@ $(function() {
     $("#error_dialog").dialog({modal: true});
     
 });
+
+//
+function deleteNonExistantEmoji(currentHTMLElement) {
+
+    //
+    currentHTMLElement.parentNode.remove();
+
+    //
+    console.clear();
+}
