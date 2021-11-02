@@ -60,7 +60,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/" {
 
 		// To display information message in cyan
-		fmt.Println(red + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Error ? Yeah...." + reset)
+		fmt.Println(red + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Wrong URL error: the application is at http://localhost..." + reset)
 
 		//
 		t := template.New("Error tmpl")
