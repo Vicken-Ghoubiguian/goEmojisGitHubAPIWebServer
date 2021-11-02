@@ -32,7 +32,14 @@
 
             function deleteNonExistantEmoji(currentHTMLElement) {
 
-                currentHTMLElement.parentNode.removeChild(currentHTMLElement);
+                //console.log(currentHTMLElement.parentNode)
+
+                currentHTMLElement.parentNode.remove();
+
+                /*currentHTMLElement.parent.remove();
+
+                currentHTMLElement.parentNode.removeChild(currentHTMLElement);*/
+
                 console.clear();
             }
 
