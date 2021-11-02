@@ -1,7 +1,11 @@
 $(function() {
 
     //
-    $(".main_app_presentation").tooltip();
+    $(".main_app_presentation").tooltip({
+
+        html: true,
+        
+    });
 
     //
     $(".main_emoji_image").tooltip({
