@@ -22,20 +22,32 @@ Coming soon...
 <a name="presentation"></a>
 ## Presentation
 
+Coming soon...
+
 <a name="project_s_structure"></a>
 ## Project's structure
+
+Coming soon...
 
 <a name="how_was_this_project_developed"></a>
 ## How was this project developed ?
 
+Coming soon...
+
 <a name="how_does_this_project_work"></a>
 ## How does this project work ?
+
+Coming soon...
 
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
+Coming soon...
+
 <a name="where_to_use_it"></a>
 ## Where to use it ?
+
+Coming soon...
 
 <a name="useful_links"></a>
 ## Useful links
