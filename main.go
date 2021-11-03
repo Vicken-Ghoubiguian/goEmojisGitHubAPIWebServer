@@ -51,7 +51,7 @@ func getIP(r *http.Request) string {
 }
 
 // Function which manage the filled in URL and all of this web application
-func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
+func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 
 	// Definition of the 'currentlistOfEmojisFromGitHub' which is a map containing all emojis collected from GitHub
 	var currentlistOfEmojisFromGitHub map[string]string
@@ -201,7 +201,7 @@ func main() {
 	setup_ctrl_z_handler()
 
 	//
-	http.HandleFunc("/", helloWorldServerFunc)
+	http.HandleFunc("/", onlyAndMainHandlerFunc)
 
 	//
 	http.ListenAndServe(":80", nil)
