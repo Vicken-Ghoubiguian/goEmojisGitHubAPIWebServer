@@ -62,10 +62,10 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		// To display information message in cyan
 		fmt.Println(red + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] Wrong URL error: the application is at http://localhost..." + reset)
 
-		//
+		// Definition of the error template
 		t := template.New("Error tmpl")
 
-		//
+		// To parse all tmpl files which contain the error template
 		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/error.tmpl", "tmpl/footer.tmpl", "tmpl/end.tmpl"))
 
 		//
@@ -74,7 +74,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		otherErrorHandlerFunction(err)
 
-		//
+		// In the other case...
 	} else {
 
 		//
@@ -101,10 +101,10 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		otherErrorHandlerFunction(err)
 
-		//
+		// Definition of the main template
 		t := template.New("Main tmpl")
 
-		//
+		// To parse all tmpl files which contain the main template
 		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/main.tmpl", "tmpl/footer.tmpl", "tmpl/end.tmpl"))
 
 		// To display information message in green
