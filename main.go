@@ -92,10 +92,10 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
 
-		//
+		// Conversion of the 'getEmojisFromGitHubAPIJsonString' string to 'getEmojisFromGitHubAPIJsonStringAsByte' []byte
 		getEmojisFromGitHubAPIJsonStringAsByte := []byte(getEmojisFromGitHubAPIJsonString)
 
-		// Single instruction to convert weather_json_string []byte variable to string
+		// Single instruction to convert 'getEmojisFromGitHubAPIJsonStringAsByte' []byte variable to map[string]string in the variable 'currentlistOfEmojisFromGitHub'
 		err = json.Unmarshal(getEmojisFromGitHubAPIJsonStringAsByte, &currentlistOfEmojisFromGitHub)
 
 		// Manage the possible occured error
