@@ -77,10 +77,10 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		// In the other case...
 	} else {
 
-		// Definition of the HTTPS request's URL to get all all emojis from GitHub
+		// Definition of the HTTPS request's URL to get all emojis from GitHub
 		getEmojisFromGitHubAPIRequest := "https://api.github.com/emojis"
 
-		//
+		// Execution of the Get HTTPS request to get all emojis from GitHub
 		getEmojisFromGitHubAPIResp, err := http.Get(getEmojisFromGitHubAPIRequest)
 
 		// Manage the possible occured error
