@@ -1,7 +1,7 @@
-//
+// Definition of the jQuery function for this web application...
 $(function() {
 
-    //
+    // To define the common tooltip for respectively github and docker image (to redirect either to the GitHub repos of this web application, or to its Docker image on Docker Hub)... 
     $(".footer_image").tooltip({
         html: true,
         tooltipClass: "footer_image",
@@ -45,7 +45,7 @@ $(function() {
         }
     });
 
-    //
+    // To define the error dialog which displays when a URL not recognized by this web application is entered...
     $("#error_dialog").dialog({
         
         modal: true,
@@ -55,16 +55,17 @@ $(function() {
             $(".ui-dialog-titlebar-close", ui.dialog || ui).hide();
         }
 
+    // To define the '#error_dialog' dialog's style...
     }).prev(".ui-dialog-titlebar").css("background","red").css("color", "white").css("font-family", "cursive");
     
 });
 
-//
+// Definition of the 'deleteNonExistantEmoji' function to delete an non-existant emoji (when the error HTTP 404 occured in the <img> HTML tag)...
 function deleteNonExistantEmoji(currentHTMLElement) {
 
-    //
+    // To remove the element from the table (the image and its corresponding row in the table)...
     currentHTMLElement.parentNode.remove();
 
-    //
+    // To clean entirely the console...
     console.clear();
 }
