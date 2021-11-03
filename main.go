@@ -86,7 +86,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
 
-		//
+		// Take the body of the previous Get HTTPS request's response in the 'getEmojisFromGitHubAPIJsonString' variable...
 		getEmojisFromGitHubAPIJsonString, err := ioutil.ReadAll(getEmojisFromGitHubAPIResp.Body)
 
 		// Manage the possible occured error
