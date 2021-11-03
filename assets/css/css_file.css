@@ -1,10 +1,8 @@
-/**/
 .main_body {
 
     font-family: cursive;
 }
 
-/**/
 #main_footer_configuration {
 
     text-align: center;
@@ -12,7 +10,6 @@
     margin-bottom: 3em;
 }
 
-/**/
 .footer_image {
 
     cursor: pointer;
@@ -20,28 +17,24 @@
           transition: transform 0.8s ease-in-out;
 }
 
-/**/
 .footer_image:hover {
 
     -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-/**/
 .footer_image {
 
     color: red !important;
     font-family: cursive !important;
 }
 
-/**/
 .error_displayer {
 
     color: red;
     font-family: cursive;
 }
 
-/**/
 #main_table {
 
     margin-left: auto;
@@ -50,7 +43,6 @@
     width: 40%;
 }
 
-/**/
 #main_page_title {
 
     color: red;
@@ -59,20 +51,17 @@
     cursor: help;
 }
 
-/**/
 #main_page_subtitle {
 
     margin-bottom: 1em;
     cursor: help;
 }
 
-/**/
 .main_alignement {
 
     text-align: center;
 }
 
-/**/
 .main_app_presentation_tooltip_styling {
 
     font-family: cursive !important;
@@ -82,7 +71,6 @@
     max-height: 10000em !important;
 }
 
-/**/
 .main_emoji_image_tooltip_styling {
 
     font-family: cursive !important;
@@ -93,25 +81,21 @@
     text-align: center !important;
 }
 
-/**/
 .main_emoji_image {
 
     cursor: help;
 }
 
-/**/
 .ui-dialog-titlebar-close {
 
     visibility: hidden;
 }
 
-/**/
 #error_redirection_link {
 
     color: purple;
 }
 
-/**/
 #error_redirection_link:hover {
 
     color: red;
