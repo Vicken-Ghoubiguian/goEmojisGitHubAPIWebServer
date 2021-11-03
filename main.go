@@ -50,7 +50,7 @@ func getIP(r *http.Request) string {
 	return r.RemoteAddr
 }
 
-//
+// Function which manage the filled in URL and all of this web application
 func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	// Definition of the 'currentlistOfEmojisFromGitHub' which is a map containing all emojis collected from GitHub
@@ -71,7 +71,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		err := t.ExecuteTemplate(w, "error", Page{"goEmojisGitHubAPIWebServer", nil})
 
-		//
+		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
 
 		// In the other case...
@@ -83,13 +83,13 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		getEmojisFromGitHubAPIResp, err := http.Get(getEmojisFromGitHubAPIRequest)
 
-		//
+		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
 
 		//
 		getEmojisFromGitHubAPIJsonString, err := ioutil.ReadAll(getEmojisFromGitHubAPIResp.Body)
 
-		//
+		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
 
 		//
@@ -98,7 +98,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		// Single instruction to convert weather_json_string []byte variable to string
 		err = json.Unmarshal(getEmojisFromGitHubAPIJsonStringAsByte, &currentlistOfEmojisFromGitHub)
 
-		//
+		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
 
 		// Definition of the main template
@@ -113,7 +113,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		//
 		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub})
 
-		//
+		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
 	}
 
