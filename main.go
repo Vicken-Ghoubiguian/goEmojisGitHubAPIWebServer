@@ -56,7 +56,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 	// Definition of the 'currentlistOfEmojisFromGitHub' which is a map containing all emojis collected from GitHub
 	var currentlistOfEmojisFromGitHub map[string]string
 
-	//
+	// If the URL is this web application's root one
 	if r.URL.Path != "/" {
 
 		// To display information message in cyan
