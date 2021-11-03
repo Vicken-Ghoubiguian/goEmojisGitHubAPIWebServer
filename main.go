@@ -200,9 +200,9 @@ func main() {
 	// Implementation of the CTRL - Z handler
 	setup_ctrl_z_handler()
 
-	//
+	// To register the 'onlyAndMainHandlerFunc' function and to correspond it to the root URL
 	http.HandleFunc("/", onlyAndMainHandlerFunc)
 
-	//
+	// To listen on the current local TCP network address at the port 80
 	http.ListenAndServe(":80", nil)
 }
