@@ -1,6 +1,6 @@
 package main
 
-//
+// Import all of the used packages in this web application (all coming from the standard library - see https://pkg.go.dev/std)
 import (
 	"encoding/json"
 	"fmt"
@@ -14,7 +14,7 @@ import (
 	"time"
 )
 
-// Definition of all colors used in this project
+// Definition of all colors used in this project (actually more)
 const (
 	reset  = "\033[0m"
 	red    = "\033[31m"
