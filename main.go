@@ -53,7 +53,7 @@ func getIP(r *http.Request) string {
 //
 func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 
-	//
+	// Definition of the 'currentlistOfEmojisFromGitHub' which is a map containing all emojis collected from GitHub
 	var currentlistOfEmojisFromGitHub map[string]string
 
 	//
@@ -77,7 +77,7 @@ func helloWorldServerFunc(w http.ResponseWriter, r *http.Request) {
 		// In the other case...
 	} else {
 
-		//
+		// Definition of the HTTPS request's URL to get all all emojis from GitHub
 		getEmojisFromGitHubAPIRequest := "https://api.github.com/emojis"
 
 		//
