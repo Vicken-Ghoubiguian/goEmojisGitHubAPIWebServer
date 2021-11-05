@@ -13,7 +13,7 @@
 
             </div>
             <div>
-                    <table class="table table-responsive" id="main_table" style="color: red;">
+                    <table class="table table-responsive" id="main_table">
                         <thead>
                             <tr>
                                 <th scope="col">Emojis</th>
@@ -21,7 +21,7 @@
                         </thead>
                         <tbody>
                             {{ range $key, $value := .ListOfEmojisFromGitHub }}
-                                <tr style="border: red;"><td><img class="main_emoji_image" src='{{ $value }}' alt='{{ $key }}' onerror='deleteNonExistantEmoji(this)' width='64' height='64' data-placement='right' title='{{ $key }}'></td></tr>
+                                <tr class="main_table_tr"><td><img class="main_emoji_image" src='{{ $value }}' alt='{{ $key }}' onerror='deleteNonExistantEmoji(this)' width='64' height='64' data-placement='right' title='{{ $key }}'></td></tr>
                             {{ end }}
                         </tbody>
                     </table>

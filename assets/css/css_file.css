@@ -37,10 +37,21 @@
 
 #main_table {
 
+    color: red;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     width: 40%;
+}
+
+.col {
+
+    color: red;
+}
+
+.main_table_tr{
+
+    border: red;
 }
 
 #main_page_title {
