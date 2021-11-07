@@ -34,7 +34,7 @@ type Page struct {
 }
 
 // Function to return client's IP adress
-func getIP(r *http.Request) string {
+func getIPFunc(r *http.Request) string {
 
 	//
 	forwarded := r.Header.Get("X-FORWARDED-FOR")
@@ -108,7 +108,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/main.tmpl", "tmpl/footer.tmpl", "tmpl/end.tmpl"))
 
 		// To display information message in green
-		fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIP(r) + "..." + reset)
+		fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIPFunc(r) + "..." + reset)
 
 		//
 		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub})
