@@ -88,8 +88,7 @@
 
     position: absolute !important;
     z-index: 1 !important;
-    /*top: -5px !important;*/
-    left: 10% !important;
+    left: 25% !important;
 }
 
 .main_emoji_image {
