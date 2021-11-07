@@ -37,7 +37,7 @@ $(function() {
         tooltipClass: "main_emoji_image_tooltip_styling",
         position:{
             at:"right",
-            my:"center",
+            my:"center right",
         },
         show: {
             effect: "explode",
