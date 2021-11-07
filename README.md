@@ -43,6 +43,11 @@ Coming soon...
 
 Coming soon...
 
+<a name="how_to_use_it"></a>
+## How to use it ?
+
+Coming soon...
+
 <a name="how_to_deploy_it"></a>
 ## How to deploy it ?
 
