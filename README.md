@@ -9,7 +9,7 @@ Web application written in Go to collect and display all the emojis 🧮 ⚓ �
 3. [Project's structure](#project_s_structure)
 4. [How was this project developed ?](#how_was_this_project_developed)
 5. [How does this project work ?](#how_does_this_project_work)
-6. [How to use it ?](#how_to_use_it)
+6. [How to deploy it ?](#how_to_deploy_it)
 7. [Where to use it ?](#where_to_use_it)
 8. [Useful links](#useful_links)
 9. [Conclusion](#conclusion)
@@ -39,8 +39,8 @@ Coming soon...
 
 Coming soon...
 
-<a name="how_to_use_it"></a>
-## How to use it ?
+<a name="how_to_deploy_it"></a>
+## How to deploy it ?
 
 Coming soon...
 
