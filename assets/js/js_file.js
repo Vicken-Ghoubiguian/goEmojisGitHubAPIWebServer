@@ -35,6 +35,10 @@ $(function() {
         
         html: true,
         tooltipClass: "main_emoji_image_tooltip_styling",
+        position:{
+            at:"center right",
+            my:"center right",
+        },
         show: {
             effect: "explode",
             delay: 250
