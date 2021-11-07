@@ -12,6 +12,7 @@ Web application written in Go to collect and display all the emojis 🧮 ⚓ �
 6. [How to deploy it ?](#how_to_deploy_it)
     * [From source code](#from_source_code)
     * [From Docker](#from_docker)
+    * [With Balena](#with_balena)
 7. [Where to use it ?](#where_to_use_it)
 8. [Useful links](#useful_links)
 9. [Conclusion](#conclusion)
@@ -51,6 +52,9 @@ Coming soon...
 ### From Docker
 
 Coming soon...
+
+<a name="with_balena"></a>
+### With Balena
 
 <a name="where_to_use_it"></a>
 ## Where to use it ?
