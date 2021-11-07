@@ -1,6 +1,6 @@
-# goEmojisGitHubAPIWebServer 🧮 ⚓ 🥈 🚡 🥇 🇦🇸 🥑 ⚗️ 🉑 🥉 ⚕️ 🧑‍🚀 🇳🇷 🐙 🎠 🛠️ 🗾 📽️ 🎞️ 🇮🇴 🎰 ☦️ 🇰🇵 🇲🇵 🩹 🚡 👶 ⚔️ 🥖 🇦🇲 ⏰ 🐱 😽 💕 🇦🇱 🇦🇽 💪 🥄 🇧🇸 ♒ 🚑 🐤 👽 🇦🇸 🏺 💢 👼 🏀 🚲 👙 🎱 🔋 🎹 🎵 🐜 📆 🌇 🍎 🇦🇶 💔 👾 🧬 🪕 🇯🇪 🤖 ☄️ 🌃 ♾️ ℹ️ 🤿
+# goEmojisGitHubAPIWebServer 🧮 ⚓ 🥈 🚡 🥇 🇦🇸 🥑 ⚗️ 🉑 🥉 ⚕️ 🧑‍🚀 🇳🇷 🐙 🎠 🛠️ 🗾 📽️ 🎞️ 🇮🇴 🎰 ☦️ 🇰🇵 🇲🇵 🩹 🚡 👶 ⚔️ 🥖 🇦🇲 ⏰ 🐱 😽 💕 🇦🇱 🇦🇽 💪 🥄 🇧🇸 ♒ 🚑 🐤 👽 🇦🇸 🏺 💢 👼 🏀 🚲 👙 🎱 🔋 🇨🇺 🎹 🎵 🐜 📆 🌇 🍎 🇦🇶 💔 👾 🧬 🪕 🇯🇪 🤖 ☄️ 🌃 ♾️ ℹ️ 🤿
 
-Web application written in Go to collect and display all the emojis 🧮 ⚓ 🥈 🚡 🥇 🇦🇸 🥑 ⚗️ 🉑 🥉 ⚕️ 🧑‍🚀 🇳🇷 🐙 🎠 🛠️ 🗾 📽️ 🎞️ 🇮🇴 🎰 ☦️ 🇰🇵 🇲🇵 🩹 🚡 👶 ⚔️ 🥖 🇦🇲 ⏰ 🐱 😽 💕 🇦🇱 🇦🇽 💪 🥄 🇧🇸 ♒ 🚑 🐤 👽 🇦🇸 🏺 💢 👼 🏀 🚲 👙 🎱 🔋 🎹 🎵 🐜 📆 🌇 🍎 🇦🇶 💔 👾 🧬 🪕 🇯🇪 🤖 ☄️ 🌃 ♾️ ℹ️ 🤿 used in GitHub via its API...
+Web application written in Go to collect and display all the emojis 🧮 ⚓ 🥈 🚡 🥇 🇦🇸 🥑 ⚗️ 🉑 🥉 ⚕️ 🧑‍🚀 🇳🇷 🐙 🎠 🛠️ 🗾 📽️ 🎞️ 🇮🇴 🎰 ☦️ 🇰🇵 🇲🇵 🩹 🚡 👶 ⚔️ 🥖 🇦🇲 ⏰ 🐱 😽 💕 🇦🇱 🇦🇽 💪 🥄 🇧🇸 ♒ 🚑 🐤 👽 🇦🇸 🏺 💢 👼 🏀 🚲 👙 🎱 🔋 🇨🇺 🎹 🎵 🐜 📆 🌇 🍎 🇦🇶 💔 👾 🧬 🪕 🇯🇪 🤖 ☄️ 🌃 ♾️ ℹ️ 🤿 used in GitHub via its API...
 
 ## Contents
 
