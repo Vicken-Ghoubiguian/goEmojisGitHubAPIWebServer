@@ -10,6 +10,8 @@ Web application written in Go to collect and display all the emojis 🧮 ⚓ �
 4. [How was this project developed ?](#how_was_this_project_developed)
 5. [How does this project work ?](#how_does_this_project_work)
 6. [How to deploy it ?](#how_to_deploy_it)
+    * [From source code]()
+    * [From Docker]()
 7. [Where to use it ?](#where_to_use_it)
 8. [Useful links](#useful_links)
 9. [Conclusion](#conclusion)
@@ -41,6 +43,12 @@ Coming soon...
 
 <a name="how_to_deploy_it"></a>
 ## How to deploy it ?
+
+<a name="from_source_code"></a>
+### From source code
+
+<a name="from_docker"></a>
+### From Docker
 
 Coming soon...
 
