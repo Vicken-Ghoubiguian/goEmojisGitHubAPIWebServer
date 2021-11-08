@@ -51,11 +51,13 @@ func getIPFunc(r *http.Request) string {
 }
 
 //
-/*func extractUnicodeFromReceivedURLFunc(emojisURL) string {
+func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
+
+	//
 
 	//
 	return ""
-}*/
+}
 
 // Function which manage the filled in URL and all of this web application
 func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
