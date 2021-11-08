@@ -68,6 +68,8 @@ go run goEmojisGitHubAPIWebServer.go
 <a name="from_source_code"></a>
 ### From source code
 
+Like see in [this section above](#how_to_use_it),
+
 ```bash
 git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
 ```
