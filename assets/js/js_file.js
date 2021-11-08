@@ -77,6 +77,9 @@ function deleteNonExistantEmoji(currentHTMLElement) {
 //
 function copyEmoji(currentHTMLElement) {
 
-    //alert(currentHTMLElement.alt);
-    alert(String.fromCodePoint(parseInt("1f9ee", 16)));
+    //
+    navigator.clipboard.writeText(String.fromCodePoint(parseInt("1f9ee", 16)));
+
+    //
+    alert("Emoji copied...");
 }
