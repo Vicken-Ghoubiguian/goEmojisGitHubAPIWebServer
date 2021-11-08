@@ -77,5 +77,6 @@ function deleteNonExistantEmoji(currentHTMLElement) {
 //
 function copyEmoji(currentHTMLElement) {
 
-    alert("" + currentHTMLElement.alt + "");
+    //alert(currentHTMLElement.alt);
+    alert(String.fromCodePoint(parseInt("1f47f", 16)));
 }
