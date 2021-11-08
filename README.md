@@ -46,13 +46,27 @@ Coming soon...
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
-Coming soon...
+```bash
+git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
+```
+
+```bash
+go run goEmojisGitHubAPIWebServer.go
+```
 
 <a name="how_to_deploy_it"></a>
 ## How to deploy it ?
 
 <a name="from_source_code"></a>
 ### From source code
+
+```bash
+git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
+```
+
+```bash
+go run goEmojisGitHubAPIWebServer.go
+```
 
 <a name="from_docker"></a>
 ### From Docker
