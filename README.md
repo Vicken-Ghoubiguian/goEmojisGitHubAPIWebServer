@@ -51,6 +51,10 @@ git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
 ```
 
 ```bash
+cd goEmojisGitHubAPIWebServer
+```
+
+```bash
 go run goEmojisGitHubAPIWebServer.go
 ```
 
@@ -62,6 +66,10 @@ go run goEmojisGitHubAPIWebServer.go
 
 ```bash
 git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
+```
+
+```bash
+cd goEmojisGitHubAPIWebServer
 ```
 
 ```bash
