@@ -29,9 +29,9 @@ const (
 
 // Definition of the Page structure used in this project to define a page
 type Page struct {
-	Title                  string
-	ListOfEmojisFromGitHub map[string]string
-	ListOfUnicodes         map[string]string
+	Title                    string
+	ListOfEmojisFromGitHub   map[string]string
+	ListOfUnicodesFromGitHub map[string]string
 }
 
 // Function to return client's IP adress
