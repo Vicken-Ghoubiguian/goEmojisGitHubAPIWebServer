@@ -31,6 +31,7 @@ const (
 type Page struct {
 	Title                  string
 	ListOfEmojisFromGitHub map[string]string
+	ListOfUnicodes         map[string]string
 }
 
 // Function to return client's IP adress
@@ -78,7 +79,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/error.tmpl", "tmpl/footer.tmpl", "tmpl/end.tmpl"))
 
 		//
-		err := t.ExecuteTemplate(w, "error", Page{"goEmojisGitHubAPIWebServer", nil})
+		err := t.ExecuteTemplate(w, "error", Page{"goEmojisGitHubAPIWebServer", nil, nil})
 
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
@@ -120,7 +121,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIPFunc(r) + "..." + reset)
 
 		//
-		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub})
+		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub, nil})
 
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
