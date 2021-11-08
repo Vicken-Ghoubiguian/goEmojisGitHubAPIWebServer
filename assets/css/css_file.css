@@ -92,7 +92,7 @@
 
 .main_emoji_image {
 
-    cursor: help;
+    cursor: cursor;
     -webkit-transition: -webkit-transform 0.8s ease-in-out;
           transition: transform 0.8s ease-in-out;
 }
