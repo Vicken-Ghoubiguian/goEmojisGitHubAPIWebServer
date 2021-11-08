@@ -74,12 +74,12 @@ function deleteNonExistantEmoji(currentHTMLElement) {
     console.clear();
 }
 
-//
+// Definition of the 'copyEmoji' function to copy the whished and selected emoji...
 function copyEmoji(currentHTMLElement) {
 
-    //
+    // To copy the emoji in the paperweight with conversion of the unicode to emoji before...
     navigator.clipboard.writeText(String.fromCodePoint(parseInt(currentHTMLElement.alt, 16)));
 
-    //
+    // To indicate that the emoji was copied successfully...
     alert("Emoji copied...");
 }
