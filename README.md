@@ -102,6 +102,8 @@ Coming soon...
 <a name="useful_links"></a>
 ## Useful links
 
+* [Emojis - GitHub Docs](https://docs.github.com/en/rest/reference/emojis),
+* [Emojis from GitHub API - link](https://api.github.com/emojis),
 * [Experimenting with JSON (structured and unstructured data) and Go - Henry S. Coelho](https://hcoelho.com/blog/62/Experimenting_with_JSON_structured_and_unstructured_data_and_Go),
 * [jQuery UI - official website](https://jqueryui.com),
 * [jQuery UI's ThemeRoller - official website](https://jqueryui.com/themeroller/)
