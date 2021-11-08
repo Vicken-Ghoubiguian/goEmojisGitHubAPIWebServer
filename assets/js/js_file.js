@@ -73,3 +73,9 @@ function deleteNonExistantEmoji(currentHTMLElement) {
     // To clean entirely the console...
     console.clear();
 }
+
+//
+function copyEmoji(currentHTMLElement) {
+
+    alert("" + currentHTMLElement.alt + "");
+}

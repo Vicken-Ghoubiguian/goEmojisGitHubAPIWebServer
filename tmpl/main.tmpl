@@ -21,7 +21,7 @@
                         </thead>
                         <tbody>
                             {{ range $key, $value := .ListOfEmojisFromGitHub }}
-                                <tr class="main_table_tr"><td><img class="main_emoji_image" src='{{ $value }}' alt='{{ $key }}' onerror='deleteNonExistantEmoji(this)' width='64' height='64' data-placement='right' title='{{ $key }}'></td></tr>
+                                <tr class="main_table_tr"><td><img class="main_emoji_image" src='{{ $value }}' alt='{{ $key }}' onerror='deleteNonExistantEmoji(this)' onclick='copyEmoji(this)' width='64' height='64' data-placement='right' title='{{ $key }}'></td></tr>
                             {{ end }}
                         </tbody>
                     </table>
