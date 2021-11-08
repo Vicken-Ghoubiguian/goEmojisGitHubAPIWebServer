@@ -55,6 +55,10 @@ cd goEmojisGitHubAPIWebServer
 ```
 
 ```bash
+export GOPATH=${PWD}
+```
+
+```bash
 go run goEmojisGitHubAPIWebServer.go
 ```
 
@@ -70,6 +74,10 @@ git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
 
 ```bash
 cd goEmojisGitHubAPIWebServer
+```
+
+```bash
+export GOPATH=${PWD}
 ```
 
 ```bash
