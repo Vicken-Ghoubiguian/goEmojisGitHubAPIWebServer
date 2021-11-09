@@ -77,7 +77,7 @@ function deleteNonExistantEmoji(currentHTMLElement) {
 // Definition of the 'copyEmoji' function to copy the whished and selected emoji...
 function copyEmoji(currentHTMLElement) {
 
-    // h
+    // To get the emoji URL from the alt attribute from the emoji image
     var emojiURL = currentHTMLElement.alt;
 
     // h
