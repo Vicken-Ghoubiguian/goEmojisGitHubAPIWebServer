@@ -63,12 +63,6 @@ func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
 // Function which manage the filled in URL and all of this web application
 func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 
-	// Definition of the 'currentlistOfEmojisFromGitHub' which is a map containing all emojis collected from GitHub
-	//var currentlistOfEmojisFromGitHub map[string]string
-
-	//
-	//var currentlistOfUnicodesFromGitHub map[string]string
-
 	// If the URL is this web application's root one
 	if r.URL.Path != "/" {
 
@@ -119,9 +113,6 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
-
-		//
-		//currentlistOfUnicodesFromGitHub := make(map[string]string)
 
 		//
 		for emojiName, emojiURL := range currentlistOfEmojisFromGitHub {
