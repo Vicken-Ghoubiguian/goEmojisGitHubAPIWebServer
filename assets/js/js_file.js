@@ -81,5 +81,5 @@ function copyEmoji(currentHTMLElement) {
     navigator.clipboard.writeText(String.fromCodePoint(parseInt(currentHTMLElement.alt, 16)));
 
     // To indicate that the emoji was copied successfully...
-    alert("Emoji copied...");
+    alert(String.fromCodePoint(parseInt(currentHTMLElement.alt, 16)) + " copied...");
 }
