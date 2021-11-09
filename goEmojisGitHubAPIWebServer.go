@@ -10,7 +10,6 @@ import (
 	"os"
 	"os/signal"
 	"strconv"
-	"strings"
 	"syscall"
 	"time"
 )
@@ -30,9 +29,8 @@ const (
 
 // Definition of the Page structure used in this project to define a page
 type Page struct {
-	Title                    string
-	ListOfEmojisFromGitHub   map[string]string
-	ListOfUnicodesFromGitHub map[string]string
+	Title                  string
+	ListOfEmojisFromGitHub map[string]string
 }
 
 // Function to return client's IP adress
@@ -52,22 +50,6 @@ func getIPFunc(r *http.Request) string {
 	return r.RemoteAddr
 }
 
-// Function to extract and return the Emoji's unicode from its URL
-func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
-
-	// Split the 'emojisURL' URL (the Emoji's GitHub URL) into an array
-	first_array_of_splitted_GitHub_emoji_url := strings.Split(emojisURL, "/")
-
-	// To obtain the 'first_array_of_splitted_GitHub_emoji_url' array's lenght
-	last_element_index := len(first_array_of_splitted_GitHub_emoji_url) - 1
-
-	// Split the last element of the 'first_array_of_splitted_GitHub_emoji_url' array in another array
-	second_array_of_splitted_GitHub_emoji_url := strings.Split(first_array_of_splitted_GitHub_emoji_url[last_element_index], ".")
-
-	// To return the corresponding emoji's extracted unicode
-	return second_array_of_splitted_GitHub_emoji_url[0]
-}
-
 // Function which manage the filled in URL and all of this web application
 func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 
@@ -84,7 +66,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		t = template.Must(t.ParseFiles("tmpl/header.tmpl", "tmpl/error.tmpl", "tmpl/footer.tmpl", "tmpl/end.tmpl"))
 
 		//
-		err := t.ExecuteTemplate(w, "error", Page{"goEmojisGitHubAPIWebServer", nil, nil})
+		err := t.ExecuteTemplate(w, "error", Page{"goEmojisGitHubAPIWebServer", nil})
 
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
@@ -94,9 +76,6 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 
 		// Definition of the 'currentlistOfEmojisFromGitHub' which is a map containing all emojis collected from GitHub
 		var currentlistOfEmojisFromGitHub map[string]string
-
-		//
-		currentlistOfUnicodesFromGitHub := make(map[string]string)
 
 		// Definition of the HTTPS request's URL to get all emojis from GitHub
 		getEmojisFromGitHubAPIRequest := "https://api.github.com/emojis"
@@ -122,15 +101,6 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
 
-		//
-		for emojiName, emojiURL := range currentlistOfEmojisFromGitHub {
-
-			//
-			currentlistOfUnicodesFromGitHub[emojiName] = extractUnicodeFromReceivedURLFunc(emojiURL)
-
-			//fmt.Println(currentlistOfUnicodesFromGitHub[emojiName])
-		}
-
 		// Definition of the main template
 		t := template.New("Main tmpl")
 
@@ -141,7 +111,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIPFunc(r) + "..." + reset)
 
 		//
-		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub, currentlistOfUnicodesFromGitHub})
+		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub})
 
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
