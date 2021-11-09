@@ -119,6 +119,8 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 
 			//
 			currentlistOfUnicodesFromGitHub[emojiName] = extractUnicodeFromReceivedURLFunc(emojiURL)
+
+			//fmt.Println(currentlistOfUnicodesFromGitHub[emojiName])
 		}
 
 		// Definition of the main template
