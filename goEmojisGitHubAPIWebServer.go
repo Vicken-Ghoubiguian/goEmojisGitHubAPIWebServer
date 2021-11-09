@@ -10,6 +10,7 @@ import (
 	"os"
 	"os/signal"
 	"strconv"
+	"strings"
 	"syscall"
 	"time"
 )
@@ -55,9 +56,16 @@ func getIPFunc(r *http.Request) string {
 func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
 
 	//
+	first_array_of_splitted_GitHub_emoji_url := strings.Split(emojisURL, "/")
 
 	//
-	return "1f9ee"
+	last_element_index := len(first_array_of_splitted_GitHub_emoji_url) - 1
+
+	//
+	second_array_of_splitted_GitHub_emoji_url := strings.Split(first_array_of_splitted_GitHub_emoji_url[last_element_index], ".")
+
+	//
+	return second_array_of_splitted_GitHub_emoji_url[0]
 }
 
 // Function which manage the filled in URL and all of this web application
@@ -120,7 +128,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 			//
 			currentlistOfUnicodesFromGitHub[emojiName] = extractUnicodeFromReceivedURLFunc(emojiURL)
 
-			//fmt.Println(currentlistOfUnicodesFromGitHub[emojiName])
+			fmt.Println(currentlistOfUnicodesFromGitHub[emojiName])
 		}
 
 		// Definition of the main template
