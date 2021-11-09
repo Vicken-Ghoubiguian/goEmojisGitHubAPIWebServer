@@ -57,7 +57,7 @@ func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
 	//
 
 	//
-	return ""
+	return "1f9ee"
 }
 
 // Function which manage the filled in URL and all of this web application
