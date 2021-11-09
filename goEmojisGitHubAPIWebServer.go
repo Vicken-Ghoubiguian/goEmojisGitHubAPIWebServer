@@ -58,7 +58,7 @@ func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
 	//
 	first_array_of_splitted_GitHub_emoji_url := strings.Split(emojisURL, "/")
 
-	//
+	// To obtain the 'first_array_of_splitted_GitHub_emoji_url' array's lenght
 	last_element_index := len(first_array_of_splitted_GitHub_emoji_url) - 1
 
 	//
