@@ -77,19 +77,19 @@ function deleteNonExistantEmoji(currentHTMLElement) {
 // Definition of the 'copyEmoji' function to copy the whished and selected emoji...
 function copyEmoji(currentHTMLElement) {
 
-    //
+    // h
     var emojiURL = currentHTMLElement.alt;
 
-    //
+    // h
     var first_array_of_splitted_GitHub_emoji_url = emojiURL.split("/");
 
-    //
+    // h
     var last_element_index = first_array_of_splitted_GitHub_emoji_url.length - 1;
 
-    //
+    // h
     var second_array_of_splitted_GitHub_emoji_url = first_array_of_splitted_GitHub_emoji_url[last_element_index].split(".");
 
-    //
+    // h
     var emojisUnicode = second_array_of_splitted_GitHub_emoji_url[0];
 
     // To copy the emoji in the paperweight with conversion of the unicode to emoji before...
