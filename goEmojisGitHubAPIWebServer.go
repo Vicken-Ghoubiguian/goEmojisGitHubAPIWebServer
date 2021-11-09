@@ -52,7 +52,7 @@ func getIPFunc(r *http.Request) string {
 	return r.RemoteAddr
 }
 
-//
+// Function to extract and return the Emoji's unicode from its URL
 func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
 
 	//
@@ -64,7 +64,7 @@ func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
 	//
 	second_array_of_splitted_GitHub_emoji_url := strings.Split(first_array_of_splitted_GitHub_emoji_url[last_element_index], ".")
 
-	//
+	// To return the corresponding emoji's extracted unicode
 	return second_array_of_splitted_GitHub_emoji_url[0]
 }
 
@@ -128,7 +128,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 			//
 			currentlistOfUnicodesFromGitHub[emojiName] = extractUnicodeFromReceivedURLFunc(emojiURL)
 
-			fmt.Println(currentlistOfUnicodesFromGitHub[emojiName])
+			//fmt.Println(currentlistOfUnicodesFromGitHub[emojiName])
 		}
 
 		// Definition of the main template
