@@ -52,19 +52,22 @@ func getIPFunc(r *http.Request) string {
 }
 
 //
-/*func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
+func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
 
 	//
 
 	//
 	return ""
-}*/
+}
 
 // Function which manage the filled in URL and all of this web application
 func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 
 	// Definition of the 'currentlistOfEmojisFromGitHub' which is a map containing all emojis collected from GitHub
-	var currentlistOfEmojisFromGitHub map[string]string
+	//var currentlistOfEmojisFromGitHub map[string]string
+
+	//
+	//var currentlistOfUnicodesFromGitHub map[string]string
 
 	// If the URL is this web application's root one
 	if r.URL.Path != "/" {
@@ -86,6 +89,12 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 
 		// In the other case...
 	} else {
+
+		// Definition of the 'currentlistOfEmojisFromGitHub' which is a map containing all emojis collected from GitHub
+		var currentlistOfEmojisFromGitHub map[string]string
+
+		//
+		currentlistOfUnicodesFromGitHub := make(map[string]string)
 
 		// Definition of the HTTPS request's URL to get all emojis from GitHub
 		getEmojisFromGitHubAPIRequest := "https://api.github.com/emojis"
@@ -111,6 +120,16 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
 
+		//
+		//currentlistOfUnicodesFromGitHub := make(map[string]string)
+
+		//
+		for emojiName, emojiURL := range currentlistOfEmojisFromGitHub {
+
+			//
+			currentlistOfUnicodesFromGitHub[emojiName] = extractUnicodeFromReceivedURLFunc(emojiURL)
+		}
+
 		// Definition of the main template
 		t := template.New("Main tmpl")
 
@@ -121,7 +140,7 @@ func onlyAndMainHandlerFunc(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(green + "[UTC time: " + time.Now().UTC().Format("January 02 2006 03:04:05") + "] New device connected: " + getIPFunc(r) + "..." + reset)
 
 		//
-		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub, nil})
+		err = t.ExecuteTemplate(w, "main", Page{"goEmojisGitHubAPIWebServer", currentlistOfEmojisFromGitHub, currentlistOfUnicodesFromGitHub})
 
 		// Manage the possible occured error
 		otherErrorHandlerFunction(err)
