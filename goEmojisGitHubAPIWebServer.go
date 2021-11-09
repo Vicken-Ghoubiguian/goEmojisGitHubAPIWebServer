@@ -55,13 +55,13 @@ func getIPFunc(r *http.Request) string {
 // Function to extract and return the Emoji's unicode from its URL
 func extractUnicodeFromReceivedURLFunc(emojisURL string) string {
 
-	//
+	// Split the 'emojisURL' URL (the Emoji's GitHub URL) into an array
 	first_array_of_splitted_GitHub_emoji_url := strings.Split(emojisURL, "/")
 
 	// To obtain the 'first_array_of_splitted_GitHub_emoji_url' array's lenght
 	last_element_index := len(first_array_of_splitted_GitHub_emoji_url) - 1
 
-	//
+	// Split the last element of the 'first_array_of_splitted_GitHub_emoji_url' array in another array
 	second_array_of_splitted_GitHub_emoji_url := strings.Split(first_array_of_splitted_GitHub_emoji_url[last_element_index], ".")
 
 	// To return the corresponding emoji's extracted unicode
