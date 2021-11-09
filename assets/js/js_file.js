@@ -83,13 +83,13 @@ function copyEmoji(currentHTMLElement) {
     // h
     var first_array_of_splitted_GitHub_emoji_url = emojiURL.split("/");
 
-    // h
+    // To determine the 'first_array_of_splitted_GitHub_emoji_url' array last element index
     var last_element_index = first_array_of_splitted_GitHub_emoji_url.length - 1;
 
     // h
     var second_array_of_splitted_GitHub_emoji_url = first_array_of_splitted_GitHub_emoji_url[last_element_index].split(".");
 
-    // h
+    // To get the emoji's unicode (which is the first element of the 'second_array_of_splitted_GitHub_emoji_url' array)
     var emojisUnicode = second_array_of_splitted_GitHub_emoji_url[0];
 
     // To copy the emoji in the paperweight with conversion of the unicode to emoji before...
