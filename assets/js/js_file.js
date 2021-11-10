@@ -80,6 +80,8 @@ function copyEmoji(currentHTMLElement) {
     // To get the emoji URL from the alt attribute from the emoji image
     var emojiURL = currentHTMLElement.alt;
 
+    /**/
+
     // To split the emoji URL as an array on the '/' character base...
     var first_array_of_splitted_GitHub_emoji_url = emojiURL.split("/");
 
@@ -98,7 +100,12 @@ function copyEmoji(currentHTMLElement) {
     // To indicate that the emoji was copied successfully...
     alert(String.fromCodePoint(parseInt(emojisUnicode, 16)) + " copied...");
 
+    /**/
+
+    //
     /*var c = '1f1fa-1f1f8'.split('-').map(i => parseInt(i,16))
+
+    //
     var t = String.fromCodePoint(...c)
     console.log(t)*/
 }
