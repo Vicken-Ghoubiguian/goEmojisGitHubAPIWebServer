@@ -102,6 +102,42 @@ go run goEmojisGitHubAPIWebServer.go
 <a name="from_dockerfile"></a>
 #### From Dockerfile
 
+
+
+```bash
+git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
+```
+
+```bash
+cd goEmojisGitHubAPIWebServer
+```
+
+```bash
+docker image build -t goemojisgithubapiwebserver:latest .
+```
+
+__clarification:__ 
+
+```bash
+docker image ls
+```
+
+```bash
+docker image history goemojisgithubapiwebserver:latest
+```
+
+```bash
+docker container run -d --name goemojisgithubapiwebserver -p 80:80 goemojisgithubapiwebserver:latest
+```
+
+```bash
+<container_s_IP_address>:80
+```
+
+```bash
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' goemojisgithubapiwebserver
+```
+
 <a name="from_docker_hub"></a>
 #### From Docker Hub
 
