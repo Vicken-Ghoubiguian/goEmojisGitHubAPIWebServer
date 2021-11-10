@@ -80,20 +80,26 @@ function copyEmoji(currentHTMLElement) {
     // To get the emoji URL from the alt attribute from the emoji image
     var emojiURL = currentHTMLElement.alt;
 
+    // To split the emoji URL as an array on the '/' character base...
+    var first_array_of_splitted_GitHub_emoji_url = emojiURL.split("/");
+
+    // To determine the 'first_array_of_splitted_GitHub_emoji_url' array last element index
+    var last_element_index = first_array_of_splitted_GitHub_emoji_url.length - 1;
+
+    // To split the last element of the 'first_array_of_splitted_GitHub_emoji_url' array as an array on the '.' character base...
+    var second_array_of_splitted_GitHub_emoji_url = first_array_of_splitted_GitHub_emoji_url[last_element_index].split(".");
+
+    // To get the emoji's unicode (which is the first element of the 'second_array_of_splitted_GitHub_emoji_url' array)...
+    var emojisUnicode = second_array_of_splitted_GitHub_emoji_url[0];
+
+    // To get the emoji's unicode (which is the first element of the 'second_array_of_splitted_GitHub_emoji_url' array)...
+    var emojisUnicode = second_array_of_splitted_GitHub_emoji_url[0];
+
     //
-    if(1 === 1) {
+    var third_array_of_splitted_GitHub_emoji_url = emojisUnicode.split("-");
 
-        // To split the emoji URL as an array on the '/' character base...
-        var first_array_of_splitted_GitHub_emoji_url = emojiURL.split("/");
-
-        // To determine the 'first_array_of_splitted_GitHub_emoji_url' array last element index
-        var last_element_index = first_array_of_splitted_GitHub_emoji_url.length - 1;
-
-        // To split the last element of the 'first_array_of_splitted_GitHub_emoji_url' array as an array on the '.' character base...
-        var second_array_of_splitted_GitHub_emoji_url = first_array_of_splitted_GitHub_emoji_url[last_element_index].split(".");
-
-        // To get the emoji's unicode (which is the first element of the 'second_array_of_splitted_GitHub_emoji_url' array)...
-        var emojisUnicode = second_array_of_splitted_GitHub_emoji_url[0];
+    //
+    if(third_array_of_splitted_GitHub_emoji_url.length === 1) {
 
         // To copy the emoji in the paperweight with conversion of the unicode to emoji before...
         navigator.clipboard.writeText(String.fromCodePoint(parseInt(emojisUnicode, 16)));
@@ -101,14 +107,19 @@ function copyEmoji(currentHTMLElement) {
         // To indicate that the emoji was copied successfully...
         alert(String.fromCodePoint(parseInt(emojisUnicode, 16)) + " copied...");
 
-    //
+    // In the other case...
     } else {
 
         //
-        /*var c = '1f1fa-1f1f8'.split('-').map(i => parseInt(i,16))
+        var emojisUnicode = emojisUnicode.split('-').map(i => parseInt(i,16));
 
         //
-        var t = String.fromCodePoint(...c)
-        console.log(t)*/
+        var emojisUnicode = String.fromCodePoint(...emojisUnicode);
+
+        // To copy the emoji in the paperweight with conversion of the unicode to emoji before...
+        navigator.clipboard.writeText(emojisUnicode);
+
+        // To indicate that the emoji was copied successfully...
+        alert(emojisUnicode + " copied...");
     }
 }
