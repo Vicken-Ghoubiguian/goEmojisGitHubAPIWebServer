@@ -52,7 +52,7 @@ First of all, you must clone the project ```goEmojisGitHubAPIWebServer``` from G
 git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
 ```
 
-In a second time, 
+In a second time, you must go to the directory of the cloned project using the following command:
 
 ```bash
 cd goEmojisGitHubAPIWebServer
