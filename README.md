@@ -141,6 +141,10 @@ docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}
 <a name="from_docker_hub"></a>
 #### From Docker Hub
 
+```bash
+docker pull wicken/goemojisgithubapiwebserver:latest
+```
+
 <a name="with_balena"></a>
 ### With Balena
 
