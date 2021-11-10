@@ -80,9 +80,7 @@ function copyEmoji(currentHTMLElement) {
     // To get the emoji URL from the alt attribute from the emoji image
     var emojiURL = currentHTMLElement.alt;
 
-    /**/
-
-    /**/
+    //
     if(1 === 1) {
 
         // To split the emoji URL as an array on the '/' character base...
