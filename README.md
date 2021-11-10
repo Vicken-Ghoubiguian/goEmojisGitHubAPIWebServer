@@ -13,6 +13,8 @@ Web application written in Go to collect and display all the emojis 🧮 ⚓ �
 7. [How to deploy it ?](#how_to_deploy_it)
     * [From source code](#from_source_code)
     * [From Docker](#from_docker)
+        * [From Dockerfile](#from_dockerfile)
+        * [From Docker Hub](#from_docker_hub)
     * [With Balena](#with_balena)
 8. [Where to use it ?](#where_to_use_it)
 9. [Useful links](#useful_links)
@@ -97,7 +99,11 @@ go run goEmojisGitHubAPIWebServer.go
 <a name="from_docker"></a>
 ### From Docker
 
-Coming soon...
+<a name="from_dockerfile"></a>
+#### From Dockerfile
+
+<a name="from_docker_hub"></a>
+#### From Docker Hub
 
 <a name="with_balena"></a>
 ### With Balena
