@@ -95,7 +95,7 @@ function copyEmoji(currentHTMLElement) {
     // To get the emoji's unicode (which is the first element of the 'second_array_of_splitted_GitHub_emoji_url' array)...
     var emojisUnicode = second_array_of_splitted_GitHub_emoji_url[0];
 
-    //
+    // To split the last element of the emojisUnicode as an array on the '-' character base...
     var third_array_of_splitted_GitHub_emoji_url = emojisUnicode.split("-");
 
     //
