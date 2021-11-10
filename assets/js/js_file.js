@@ -97,4 +97,8 @@ function copyEmoji(currentHTMLElement) {
 
     // To indicate that the emoji was copied successfully...
     alert(String.fromCodePoint(parseInt(emojisUnicode, 16)) + " copied...");
+
+    /*var c = '1f1fa-1f1f8'.split('-').map(i => parseInt(i,16))
+    var t = String.fromCodePoint(...c)
+    console.log(t)*/
 }
