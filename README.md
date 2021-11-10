@@ -46,17 +46,25 @@ Coming soon...
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
+First of all, you must clone the project ```goEmojisGitHubAPIWebServer``` from GitHub using this command:
+
 ```bash
 git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
 ```
+
+In a second time, 
 
 ```bash
 cd goEmojisGitHubAPIWebServer
 ```
 
+In a third time, 
+
 ```bash
 export GOPATH=${PWD}
 ```
+
+Finaly, it's time to run this web app by executing this command bellow:
 
 ```bash
 go run goEmojisGitHubAPIWebServer.go
