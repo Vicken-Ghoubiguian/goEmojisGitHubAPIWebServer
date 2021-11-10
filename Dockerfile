@@ -16,5 +16,5 @@ ENV GOPATH /goEmojisGitHubAPIWebServer
 #Expose the docker container listening port
 EXPOSE 80
 
-#Container instruction as entrypoint: 'go run main.go'
-ENTRYPOINT ["go", "run", "main.go"]
+#Container instruction as entrypoint: 'go run goEmojisGitHubAPIWebServer.go'
+ENTRYPOINT ["go", "run", "goEmojisGitHubAPIWebServer.go"]
