@@ -116,7 +116,7 @@ cd goEmojisGitHubAPIWebServer
 docker image build -t goemojisgithubapiwebserver:latest .
 ```
 
-__clarification:__ 
+__clarification:__ the character `.` specified at the end of the command refers to the current directory.
 
 ```bash
 docker image ls
