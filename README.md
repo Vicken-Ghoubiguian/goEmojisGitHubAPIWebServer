@@ -96,6 +96,8 @@ export GOPATH=${PWD}
 go run goEmojisGitHubAPIWebServer.go
 ```
 
+Now ! It's your turn to play...
+
 <a name="from_docker"></a>
 ### From Docker
 
