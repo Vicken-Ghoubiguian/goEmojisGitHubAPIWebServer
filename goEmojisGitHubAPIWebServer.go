@@ -42,11 +42,11 @@ func getIPFunc(r *http.Request) string {
 	//
 	if forwarded != "" {
 
-		//
+		// To return (Coming soon...)
 		return forwarded
 	}
 
-	//
+	// To return (Coming soon...)
 	return r.RemoteAddr
 }
 
