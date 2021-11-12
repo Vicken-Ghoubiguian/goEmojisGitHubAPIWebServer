@@ -104,7 +104,7 @@ Now ! It's your turn to play...
 <a name="from_dockerfile"></a>
 #### From Dockerfile
 
-
+First of all, you must clone the project ```goEmojisGitHubAPIWebServer``` from GitHub using this command:
 
 ```bash
 git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
