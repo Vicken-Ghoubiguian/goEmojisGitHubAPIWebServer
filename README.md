@@ -90,8 +90,46 @@ Now the web app is working completely fine. To see this, please click [here](htt
 <a name="by_dockerfile"></a>
 #### By Dockerfile...
 
+```bash
+git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
+```
+
+```bash
+cd goEmojisGitHubAPIWebServer
+```
+
+```bash
+docker image build -t goemojisgithubapiwebserver:latest .
+```
+
+__clarification:__ the character `.` specified at the end of the command refers to the current directory.
+
+```bash
+docker image ls
+```
+
+```bash
+docker image history goemojisgithubapiwebserver:latest
+```
+
+```bash
+docker container run -d --name goemojisgithubapiwebserver -p 80:80 goemojisgithubapiwebserver:latest
+```
+
+```bash
+<container_s_IP_address>:80
+```
+
+```bash
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' goemojisgithubapiwebserver
+```
+
 <a name="by_docker_hub"></a>
 #### By Docker Hub...
+
+```bash
+docker pull wicken/goemojisgithubapiwebserver:latest
+```
 
 <a name="how_to_deploy_it"></a>
 ## How to deploy it ?
