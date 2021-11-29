@@ -52,6 +52,9 @@ Coming soon...
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
+<a name="by_source_code"></a>
+### By source code...
+
 First of all, you must clone the project ```goEmojisGitHubAPIWebServer``` from GitHub using this command:
 
 ```bash
@@ -75,6 +78,14 @@ Finaly, it's time to run this web app by executing this command bellow:
 ```bash
 go run goEmojisGitHubAPIWebServer.go
 ```
+<a name="by_docker"></a>
+### By Docker...
+
+<a name="by_dockerfile"></a>
+#### By Dockerfile...
+
+<a name="by_docker_hub"></a>
+#### By Docker Hub...
 
 <a name="how_to_deploy_it"></a>
 ## How to deploy it ?
