@@ -52,8 +52,12 @@ Coming soon...
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
+There are 2 ways to use the ```goEmojisGitHubAPIWebServer``` web application: through source code and through Docker. Here they are:
+
 <a name="by_source_code"></a>
 ### By source code...
+
+We will first discuss the installation, deployment and use of this web application.
 
 First of all, you must clone the project ```goEmojisGitHubAPIWebServer``` from GitHub using this command:
 
@@ -78,6 +82,8 @@ Finaly, it's time to run this web app by executing this command bellow:
 ```bash
 go run goEmojisGitHubAPIWebServer.go
 ```
+Now the web app is working completely fine. To see this, please click [here](http://localhost).
+
 <a name="by_docker"></a>
 ### By Docker...
 
