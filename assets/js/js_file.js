@@ -74,6 +74,12 @@ function deleteNonExistantEmoji(currentHTMLElement) {
     console.clear();
 }
 
+//
+function emojisCount() {
+
+    
+}
+
 // Definition of the 'copyEmoji' function to copy the whished and selected emoji...
 function copyEmoji(currentHTMLElement) {
 
