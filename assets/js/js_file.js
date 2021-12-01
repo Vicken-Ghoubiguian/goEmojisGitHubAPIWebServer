@@ -49,6 +49,22 @@ $(function() {
         }
     });
 
+    //
+    $(".main_emojis_count_label").tooltip({
+
+        html: true,
+        tooltipClass: "main_emojis_count_label_styling",
+        content: "test",
+        show: {
+            effect: "explode",
+            delay: 250
+        },
+        hide: {
+            effect: "explode",
+            delay: 250
+        }
+    });
+
     // To define the error dialog which displays when a URL not recognized by this web application is entered...
     $("#error_dialog").dialog({
         

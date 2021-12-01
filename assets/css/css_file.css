@@ -1,9 +1,10 @@
-#main_emojis_count_label {
+.main_emojis_count_label {
 
     color: red;
     text-align: center;
     margin-bottom: 1em;
     font-size: x-large;
+    cursor: help;
 }
 
 .main_body {
@@ -74,6 +75,15 @@
 .main_alignement {
 
     text-align: center;
+}
+
+.main_emojis_count_label_styling {
+
+    font-family: cursive !important;
+    font-size: 1em !important;
+    color: red !important;
+    max-width: 30em !important;
+    max-height: 30em !important;
 }
 
 .main_app_presentation_tooltip_styling {
