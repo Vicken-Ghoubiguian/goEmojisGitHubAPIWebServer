@@ -77,7 +77,7 @@ $(function() {
     // To define the '#error_dialog' dialog's style...
     }).prev(".ui-dialog-titlebar").css("background","red").css("color", "white").css("font-family", "cursive");
 
-    //
+    // To put the GitHub emojis count inside the corresponding label...
     $(".main_emojis_count_label").attr("title" , $("#main_table tr").length);
     
 });
