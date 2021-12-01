@@ -63,7 +63,7 @@ $(function() {
     }).prev(".ui-dialog-titlebar").css("background","red").css("color", "white").css("font-family", "cursive");
 
     //
-    $("#main_emojis_count_number").text("677");
+    $("#main_emojis_count_number").text($("#main_table tr").length);
     
 });
 
