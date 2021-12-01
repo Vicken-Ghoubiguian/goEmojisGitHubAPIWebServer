@@ -61,6 +61,9 @@ $(function() {
 
     // To define the '#error_dialog' dialog's style...
     }).prev(".ui-dialog-titlebar").css("background","red").css("color", "white").css("font-family", "cursive");
+
+    //
+    $("#main_emojis_count_number").text("677");
     
 });
 
@@ -72,12 +75,6 @@ function deleteNonExistantEmoji(currentHTMLElement) {
 
     // To clean entirely the console...
     console.clear();
-}
-
-//
-function emojisCount() {
-
-    
 }
 
 // Definition of the 'copyEmoji' function to copy the whished and selected emoji...
