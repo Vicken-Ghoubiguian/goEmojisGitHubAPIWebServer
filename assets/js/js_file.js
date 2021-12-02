@@ -56,7 +56,7 @@ $(function() {
         tooltipClass: "main_emojis_count_label_styling",
         position:{
             at:"center",
-            my:"center right",
+            my:"center bottom left",
         },
         show: {
             effect: "explode",
