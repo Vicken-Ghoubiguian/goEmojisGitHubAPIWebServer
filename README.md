@@ -217,7 +217,7 @@ docker pull wicken/goemojisgithubapiwebserver:latest
 <a name="where_to_use_it"></a>
 ## Where to use it ?
 
-You can use this web application in many cases. You can use it, for example, in an educational case: to teach the Go language and web APIs to schoolchildren and students through an exciting and rewarding project.
+You can use this web application in many cases. You can use it, for example, in an educational case: to teach the Go language and web APIs to schoolchildren and students through an exciting and rewarding project. This web application could also be used for computer enthusiasts, to also learn the Go language and development with APIs.
 
 <a name="useful_links"></a>
 ## Useful links
