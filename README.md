@@ -127,6 +127,8 @@ docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}
 <a name="by_docker_hub"></a>
 #### By Docker Hub...
 
+And you can also deploy this web application using Docker and without the associated Dockerfile. The web application `goEmojisGitHubAPIWebServer 🧮 ⚓ 🥈 🚡 🥇 🇦🇸 🥑 ⚗️ 🉑 🥉 ⚕️ 🧑‍🚀 🇳🇷 🐙 🎠 🛠️ 🗾 📽️ 🎞️ 🇮🇴 🎰 ☦️ 🇰🇵 🇲🇵 🩹 🚡 👶 ⚔️ 🥖 🇦🇲 ⏰ 🐱 😽 💕 🇦🇱 🇦🇽 💪 🥄 🇧🇸 ♒ 🚑 🐤 👽 🇦🇸 🏺 💢 👼 🏀 🚲 👙 🎱 🔋 🇨🇺 🎹 🎵 🐜 📆 🌇 🍎 🇦🇶 💔 👾 🧬 🪕 🇯🇪 🦠 🤖 ☄️ 🌃 ♾️ ℹ️ 🤿` has an official image on Docker Hub. So please run the following command:
+
 ```bash
 docker pull wicken/goemojisgithubapiwebserver:latest
 ```
