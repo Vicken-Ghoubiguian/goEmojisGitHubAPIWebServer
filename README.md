@@ -132,6 +132,7 @@ And you can also deploy this web application using Docker and without the associ
 ```bash
 docker pull wicken/goemojisgithubapiwebserver:latest
 ```
+Now it's time to create the Docker container and get it working as discussed above.
 
 <a name="how_to_deploy_it"></a>
 ## How to deploy it ?
