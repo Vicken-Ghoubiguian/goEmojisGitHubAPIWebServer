@@ -217,7 +217,7 @@ docker pull wicken/goemojisgithubapiwebserver:latest
 <a name="where_to_use_it"></a>
 ## Where to use it ?
 
-Coming soon...
+You can use this web application in many cases. You can use it, for example, in an educational case.
 
 <a name="useful_links"></a>
 ## Useful links
