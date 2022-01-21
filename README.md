@@ -39,12 +39,9 @@ Coming soon...
 
 What is this project and this web application made of ? Here are all of the elements... Therefore:
 
+* The Go file `goEmojisGitHubAPIWebServer.go`, which is the main file, the executable file, of this web application,
 *
-
-*
-
-*
-
+* The 
 *
 
 <a name="how_was_this_project_developed"></a>
