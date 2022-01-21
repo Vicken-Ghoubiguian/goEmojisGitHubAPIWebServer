@@ -40,8 +40,8 @@ Coming soon...
 What is this project and this web application made of ? Here are all of the elements... Therefore:
 
 * The Go file `goEmojisGitHubAPIWebServer.go`, which is the main file, the executable file, of this web application,
-*
-*
+* The `assets` folder
+* The `tmpl` folder
 * The `Dockerfile` file, 
 * The `README.md` file, which is a markdown file, which presents the current project, the web application and serves as a manual for the latter,
 * The `LICENSE` file is the software license which this web application is under, so the 'MIT' one in this present case,
