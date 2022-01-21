@@ -27,7 +27,7 @@ Web application written in Go to collect and display all the emojis 🧮 ⚓ �
 <a name="introduction"></a>
 ## Introduction
 
-Coming soon...
+This is a web application which collect and display all the emojis used in GitHub via its API. This web application was developed when my contract at IMERIR ended successfully. My interest in emojis then grew and so I started to develop projects on emojis. This is the first of a long list putting emojis front and center.
 
 <a name="presentation"></a>
 ## Presentation
