@@ -41,7 +41,7 @@ What is this project and this web application made of ? Here are all of the elem
 
 * The Go file `goEmojisGitHubAPIWebServer.go`, which is the main file, the executable file, of this web application,
 *
-* The 
+* The `README.md` file, which is a markdown file, which presents the current project, the web application and serves as a manual for the latter,
 *
 
 <a name="how_was_this_project_developed"></a>
