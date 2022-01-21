@@ -37,7 +37,15 @@ Coming soon...
 <a name="project_s_structure"></a>
 ## Project's structure
 
-Coming soon...
+What is this project and this web application made of ? Here are all of the elements... Therefore:
+
+*
+
+*
+
+*
+
+*
 
 <a name="how_was_this_project_developed"></a>
 ## How was this project developed ?
