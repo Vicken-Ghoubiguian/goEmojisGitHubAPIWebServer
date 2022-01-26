@@ -208,10 +208,12 @@ docker image history goemojisgithubapiwebserver:latest
 ```bash
 docker container run -d --name goemojisgithubapiwebserver -p 80:80 goemojisgithubapiwebserver:latest
 ```
+To access to the web application from your browser, you must type the Docker container's IP adress following the colon (':') character and the port number (here '80'). It is show in the following command:
 
 ```bash
 <container_s_IP_address>:80
 ```
+
 
 ```bash
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' goemojisgithubapiwebserver
