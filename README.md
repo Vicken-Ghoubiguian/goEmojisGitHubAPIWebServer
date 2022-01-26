@@ -182,16 +182,20 @@ First of all, you must clone the project ```goEmojisGitHubAPIWebServer``` from G
 ```bash
 git clone https://github.com/Vicken-Ghoubiguian/goEmojisGitHubAPIWebServer
 ```
+Now, it is time for you to position yourself in the `goEmojisGitHubAPIWebServer` repository, using this bellow command:
 
 ```bash
 cd goEmojisGitHubAPIWebServer
 ```
+Then, you'll build the Docker image following the bellow command:
 
 ```bash
 docker image build -t goemojisgithubapiwebserver:latest .
 ```
 
 __clarification:__ the character `.` specified at the end of the command refers to the current directory.
+
+If you want to list all Docker images on your system, you must follow the next command:
 
 ```bash
 docker image ls
