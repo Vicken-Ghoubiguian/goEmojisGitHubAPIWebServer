@@ -213,7 +213,7 @@ To access to the web application from your browser, you must type the Docker con
 ```bash
 <container_s_IP_address>:80
 ```
-
+To get the Docker container's IP adress, just execute the the following command:
 
 ```bash
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' goemojisgithubapiwebserver
